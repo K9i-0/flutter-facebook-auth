@@ -56,6 +56,9 @@ class ClassicToken extends AccessToken {
   /// DateTime with the expires date of this token
   final DateTime expires;
 
+  /// DateTime with data access expiration time
+  final DateTime dataAccessExpirationTime;
+
   /// the facebook user id
   final String userId;
 
@@ -75,6 +78,7 @@ class ClassicToken extends AccessToken {
     required this.grantedPermissions,
     required this.userId,
     required this.expires,
+    required this.dataAccessExpirationTime,
     required super.tokenString,
     required this.applicationId,
     this.authenticationToken,
@@ -90,6 +94,12 @@ class ClassicToken extends AccessToken {
       tokenString: json['token'] ?? json['tokenString'],
       expires: DateTime.fromMillisecondsSinceEpoch(
         json['expires'].clamp(
+          minMillisecondsSinceEpoch,
+          maxMillisecondsSinceEpoch,
+        ),
+      ),
+      dataAccessExpirationTime: DateTime.fromMillisecondsSinceEpoch(
+        json['dataAccessExpirationTime'].clamp(
           minMillisecondsSinceEpoch,
           maxMillisecondsSinceEpoch,
         ),

@@ -226,6 +226,7 @@ class FacebookAuth: NSObject {
             "token": accessToken!.tokenString,
             "userId": accessToken!.userID,
             "expires": Int64((accessToken!.expirationDate.timeIntervalSince1970 * 1000).rounded()),
+            "dataAccessExpirationTime": Int64((accessToken!.dataAccessExpirationDate.timeIntervalSince1970 * 1000).rounded()),
             "applicationId": accessToken!.appID,
             "grantedPermissions": accessToken!.permissions.map { item in item.name },
             "declinedPermissions": accessToken!.declinedPermissions.map { item in item.name },

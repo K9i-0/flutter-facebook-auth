@@ -1,24 +1,29 @@
-import 'dart:convert';
-import 'package:flutter/foundation.dart' show kIsWeb;
+import 'package:flutter/foundation.dart' show defaultTargetPlatform, kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:flutter_facebook_auth/flutter_facebook_auth.dart';
-import 'my_app.dart';
+import 'package:flutter_facebook_auth_example/login_page.dart';
 
 void main() async {
-  if (kIsWeb) {
+  if (kIsWeb || defaultTargetPlatform == TargetPlatform.macOS) {
     // initialiaze the facebook javascript SDK
-    await FacebookAuth.instance.webInitialize(
+    await FacebookAuth.instance.webAndDesktopInitialize(
       appId: "1329834907365798",
       cookie: true,
       xfbml: true,
-      version: "v13.0",
+      version: "v19.0",
     );
   }
   runApp(MyApp());
 }
 
-String prettyPrint(Map json) {
-  JsonEncoder encoder = new JsonEncoder.withIndent('  ');
-  String pretty = encoder.convert(json);
-  return pretty;
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: LoginPage(),
+      debugShowCheckedModeBanner: false,
+    );
+  }
 }

@@ -6,7 +6,6 @@ import 'package:flutter_facebook_auth_web/flutter_facebook_auth_web.dart';
 
 import 'package:flutter_test/flutter_test.dart';
 import 'mock/mock_data.dart';
-import 'mock/mock_interop.dart';
 
 /// create a new instance of FacebookAuthPlugin with Mock Data
 FlutterFacebookAuthPlugin getPlugin() => FlutterFacebookAuthPlugin();
@@ -22,9 +21,8 @@ void main() {
     });
 
     test('is initialized', () async {
-      fbMock = FbMock();
       final plugin = getPlugin();
-      await plugin.webInitialize(
+      await plugin.webAndDesktopInitialize(
         appId: '1234',
         cookie: true,
         xfbml: true,
@@ -40,7 +38,6 @@ void main() {
     late bool isLogged = false;
     setUp(
       () {
-        fbMock = FbMock();
         js.context['FB']['init'] = js.allowInterop((js.JsObject options) {});
         js.context['FB']['login'] = js.allowInterop((js.JsFunction fn, _) {
           isLogged = true;
@@ -104,7 +101,7 @@ void main() {
     );
     test('login request', () async {
       final plugin = getPlugin();
-      await plugin.webInitialize(
+      await plugin.webAndDesktopInitialize(
         appId: '1234',
         cookie: true,
         xfbml: true,
@@ -118,12 +115,6 @@ void main() {
       // check the login sucessful
       expect(result.status, LoginStatus.success);
       expect(result.accessToken != null, true);
-
-      // check the granted and declined permissions
-      final FacebookPermissions? permissions = await plugin.permissions;
-      expect(permissions, isNotNull);
-      expect(permissions!.granted.length == 1, true);
-      expect(permissions.declined.length == 1, true);
 
       // get the user data
       Map<String, dynamic> userData = await plugin.getUserData();

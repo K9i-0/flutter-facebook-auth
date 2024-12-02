@@ -1,3 +1,28 @@
+### 6.1.2
+- mocktail: ^1.0.4
+
+### 6.1.1
+- Fixed AccessToken.fromJson on MacOS.
+
+### 6.1.0
+- Use dart >=3.3.0 <4.0.0
+
+### 6.0.0
+- Added `LoginTracking` enum.
+- Added `ClassicToken` and `LimitedToken` classes.
+
+### 5.0.0
+- Use dart >=3.0.0 <4.0.0
+
+### 4.1.1
+- Fixed bug parsing `dataAccessExpirationTime` throws `String is not a subtype of int` on macOS.
+### 4.1.0
+- Added dataAccessExpirationTime to AccessToken.
+### 4.0.1
+- plugin_platform_interface: ^2.1.2
+### 4.0.0
+- **BREAKING CHANGE**
+    Replaced `webInitialize` method for `webAndDesktopInitialize`.
 ### 3.2.0
 - plugin_platform_interface: ^2.1.2
 - mocktail: ^0.3.0

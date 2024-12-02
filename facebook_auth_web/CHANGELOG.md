@@ -1,3 +1,33 @@
+### 6.1.2
+- Updated flutter_facebook_auth_platform_interface: ^6.1.2
+- Updated web:^1.0.0
+
+### 6.1.1
+- Updated flutter_facebook_auth_platform_interface: ^6.1.0
+
+### 6.1.0
+- Migrate to package:web.
+- environment:
+  Use dart sdk: '>=3.3.0 <4.0.0'
+  Use flutter: ">=3.19.2"
+
+
+### 6.0.0
+- Updated flutter_facebook_auth_platform_interface: ^6.0.0
+
+### 5.0.0
+- Use dart >=3.0.0 <4.0.0
+
+### 4.1.1
+- Updated flutter_facebook_auth_platform_interface: ^4.1.1
+### 4.1.0
+- Updated flutter_facebook_auth_platform_interface: ^4.1.0
+### 4.0.1
+- Updated flutter_facebook_auth_platform_interface: ^4.0.1
+
+### 4.0.0
+- Updated flutter_facebook_auth_platform_interface: ^4.0.0
+
 ### 3.2.0
 - Updated flutter_facebook_auth_platform_interface: ^3.2.0
 ### 3.1.2

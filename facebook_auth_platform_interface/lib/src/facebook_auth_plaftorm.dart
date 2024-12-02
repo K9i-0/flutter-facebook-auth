@@ -3,9 +3,10 @@ import 'package:plugin_platform_interface/plugin_platform_interface.dart';
 
 import 'access_token.dart';
 import 'facebook_auth_implementation.dart';
-import 'facebook_permissions.dart';
 import 'login_behavior.dart';
 import 'login_result.dart';
+
+enum LoginTracking { limited, enabled }
 
 /// The interface that implementations of flutter_facebook_auth must implement.
 ///
@@ -33,8 +34,8 @@ abstract class FacebookAuthPlatform extends PlatformInterface {
     _instance = instance;
   }
 
-  /// initialiaze the facebook javascript sdk
-  Future<void> webInitialize({
+  /// initialiaze the facebook javascript sdk or the oauth flow for desktop apps
+  Future<void> webAndDesktopInitialize({
     required String appId,
     required bool cookie,
     required bool xfbml,
@@ -54,6 +55,8 @@ abstract class FacebookAuthPlatform extends PlatformInterface {
   Future<LoginResult> login({
     List<String> permissions = const ['email', 'public_profile'],
     LoginBehavior loginBehavior = LoginBehavior.dialogOnly,
+    LoginTracking loginTracking = LoginTracking.enabled,
+    String? nonce,
   });
 
   /// Express login logs people in with their Facebook account across devices and platform.
@@ -83,7 +86,4 @@ abstract class FacebookAuthPlatform extends PlatformInterface {
 
   /// if the user is logged return one instance of AccessToken
   Future<AccessToken?> get accessToken;
-
-  /// get the permissions for the current access token
-  Future<FacebookPermissions?> get permissions;
 }

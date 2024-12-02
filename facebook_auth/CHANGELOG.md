@@ -1,3 +1,128 @@
+### 7.1.1
+- Updated Facebook iOS SDK to 17.1.0
+- Updated Facebook Android SDK to 17.0.2
+- Updated to `flutter_facebook_auth_platform_interface: ^6.1.2`.
+- Updated to `flutter_facebook_auth_web: ^6.1.2`.
+- Updated to `facebook_auth_desktop: ^2.1.1`
+
+### 7.1.0
+- Updated to `flutter_facebook_auth_platform_interface: ^6.1.0`.
+- Updated to `flutter_facebook_auth_web: ^6.1.1`.
+- Updated to `facebook_auth_desktop: ^2.1.0`
+
+### 7.0.1
+- Updated Facebook iOS SDK to 17.0.2
+- IMPORTANT: If you are upgrading from a previous version 
+  on iOS you must update your pod dependencies:
+  ```shell
+  cd ios && pod update flutter_facebook_auth
+  ```
+
+### 7.0.0
+- iOS: Added `nonce` parameter in `login` function.
+- **BREAKING CHANGE** Removed the `grantedPermissions` getter.
+- **BREAKING CHANGE** Added support for limited login:
+  - iOS: If the user has not granted the AdvertiserTracking permission, the login process will now enter a [Limited Login mode](https://developers.facebook.com/docs/facebook-login/limited-login).
+  - Added enum `AccessTokenType`.
+  - Added `LoginTracking` enum in the `login` function.
+  - The `AccessToken` class is now abstract and now has 2 properties: `type` and `tokenString`.
+  - Added subtypes `ClassicToken` and `LimitedToken` of `AccessToken`.
+  - Please check the example project `facebook_auth/example/lib/login_page.dart`.
+
+
+### 6.2.0
+- Updated Facebook iOS SDK to 17.0.0
+- Updated Facebook Android SDK to 17.0.0
+
+### 6.1.1
+- Fixed [issue #383](https://github.com/darwin-morocho/flutter-facebook-auth/issues/383)
+
+### 6.1.0
+- Fixed [issue #389](https://github.com/darwin-morocho/flutter-facebook-auth/issues/389). Thanks to [potatojoayo](https://github.com/potatojoayo)
+
+### 6.0.4
+- Updated Facebook iOS SDK to 16.3.1
+- Updated Facebook Android SDK to 16.3.0
+
+### 6.0.3
+- Updated to `facebook_auth_desktop: ^1.0.2`
+- Updated Facebook iOS SDK to 16.2.0
+- Updated Facebook Android SDK to 16.2.0
+
+### 6.0.2
+- Updated to `facebook_auth_desktop: ^1.0.1`
+
+### 6.0.1
+- Updated Facebook iOS SDK to 16.1.3
+- Updated Facebook Android SDK to 16.1.3
+
+### 6.0.0
+- **BREAKING CHANGE**  since 6.x version your project must use dart 3.x or or higher.
+In your `pubspec.yaml` make sure that you are using dart 3.x or or higher.
+ ```yaml 
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+ ```
+
+- Updated to `flutter_facebook_auth_platform_interface: ^5.0.0`.
+- Updated to `flutter_facebook_auth_web: ^5.0.0`.
+- Updated to `facebook_auth_desktop: ^1.0.0`
+
+
+### version: 5.0.11
+- Android (Add support of namespace property to support AGP 8)
+### version: 5.0.10
+- Removed java constraints.
+
+### version: 5.0.9
+- Updated Facebook iOS SDK to 16.0.1
+- Updated Facebook Android SDK to 16.0.1
+
+### version: 5.0.8
+- Updated to `facebook_auth_desktop: ^0.0.9`
+### version: 5.0.7
+- Updated to `facebook_auth_desktop: ^0.0.8`
+
+### version: 5.0.6
+- fixed `expires_in` time on macOS.
+NOTE (macOS): keep in mind that this plugin uses the oauth flow facebook login
+and in some cases if the graph api doesn't return a `long_lived_token`
+the token stored in the keychain will have a sort live time (80 minutes aprox).
+### version: 5.0.5
+- fixed `long_lived_token` is null on macOS.
+### version: 5.0.4
+- Removed FBSDKCoreKit from ios.
+### version: 5.0.3
+- Fixed bug parsing `dataAccessExpirationTime` throws `String is not a subtype of int` on macOS.
+- Updated to `flutter_facebook_auth_platform_interface: ^4.1.1`.
+- Updated to `flutter_facebook_auth_web: ^4.1.1`.
+- Updated to `facebook_auth_desktop: ^0.0.5`
+### version: 5.0.2
+- Added FBSDKCoreKit on iOS.
+- Updated Facebook iOS SDK to 15.1.0
+
+### version: 5.0.1
+- Android -> Replaced `jcenter` repository for `mavenCentral`.
+### version: 5.0.0+2
+- Updated min dart sdk version to 2.14.0.
+### version: 5.0.0+1
+- Updated readme.
+### version: 5.0.0
+- Added macOS support.
+- Updated to `facebook_auth_desktop: ^0.0.4`
+- Updated Facebook iOS SDK to 15.0.0
+- Updated Facebook Android SDK to 15.0.2
+
+### version: 5.0.0-dev.3
+- Updated to `flutter_facebook_auth_platform_interface: ^4.0.1`.
+### version: 5.0.0-dev.1
+- Added macOS documentation.
+### version: 5.0.0-dev.0
+- **BREAKING CHANGE**
+    Replaced `webInitialize` method for `webAndDesktopInitialize`.
+- Added macOS support.
+- Updated to `flutter_facebook_auth_platform_interface: ^4.0.0`.
+- Updated to `flutter_facebook_auth_web: ^4.0.0`.
 ### 4.4.1+1
 - Updated Facebook Android SDK to 14.1.1
 ### 4.4.0+1

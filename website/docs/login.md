@@ -41,13 +41,38 @@ final LoginResult result = await FacebookAuth.instance.login(
 // )
 ```
 
-The `AccessToken` class has two fields (only Android and iOS, on web these fields will be null) `grantedPermissions` and `declinedPermissions` to check the permissions granted for the user.
+::: INFO
+# App Tracking Transparency
 
-On web use `FacebookAuth.instance.permissions` to check the permissions granted for the user.
-```dart
-FacebookPermissions  permissions = await FacebookAuth.instance.permissions;
-// or FacebookAuth.i.permissions
+Since **iOS 17** apple  all iOS apps must request the **AppTrackingTransparency** permission before the facebook login. 
+
+ If the user has not granted the AdvertiserTracking permission, the login process will now enter a [Limited Login mode](https://developers.facebook.com/docs/facebook-login/limited-login).
+
+
+In your `Info.plist` add the `NSUserTrackingUsageDescription` key only if you don't have it.
 ```
+<key>NSUserTrackingUsageDescription</key>
+<string>Your reason, why you want to track the user</string>
+```
+
+Next you need to ask to the user about the **AppTrackingTransparency** permission. To do that you can use [permission_handler](https://pub.dev/packages/permission_handler)
+
+```dart
+await Permission.appTrackingTransparency.request();
+final LoginResult result = await FacebookAuth.instance.login();
+```
+:::
+
+## BREAKING CHANGES TO SUPPORT THE LIMITED LOGIN
+- iOS: Added `nonce` parameter in `login` function.
+- **BREAKING CHANGE** Removed the `grantedPermissions` getter.
+- **BREAKING CHANGE** Added support for limited login:
+  - iOS: If the user has not granted the AdvertiserTracking permission, the login process will now enter a [Limited Login mode](https://developers.facebook.com/docs/facebook-login/limited-login).
+  - Added enum `AccessTokenType`.
+  - Added `LoginTracking` enum in the `login` function.
+  - The `AccessToken` class is now abstract and now has 2 properties: `type` and `tokenString`.
+  - Added subtypes `ClassicToken` and `LimitedToken` of `AccessToken`.
+  - Please check the example project `facebook_auth/example/lib/login_page.dart`.
 
 ---
 ## Check if the user is logged.

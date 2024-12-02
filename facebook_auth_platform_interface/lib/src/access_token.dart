@@ -1,25 +1,66 @@
 const maxMillisecondsSinceEpoch = 8640000000000000;
 const minMillisecondsSinceEpoch = -8640000000000000;
 
+enum AccessTokenType { classic, limited }
+
+abstract class AccessToken {
+  final String tokenString;
+  final AccessTokenType type;
+
+  AccessToken({
+    required this.tokenString,
+    required this.type,
+  });
+
+  Map<String, dynamic> toJson();
+}
+
+class LimitedToken extends AccessToken {
+  final String userId;
+  final String userName;
+  final String? userEmail;
+  final String nonce;
+
+  LimitedToken({
+    required this.userId,
+    required this.userName,
+    required this.userEmail,
+    required this.nonce,
+    super.type = AccessTokenType.limited,
+    required super.tokenString,
+  });
+
+  factory LimitedToken.fromJson(Map<String, dynamic> json) {
+    return LimitedToken(
+      userId: json['userId'],
+      userName: json['userName'],
+      userEmail: json['userEmail'],
+      tokenString: json['token'],
+      nonce: json['nonce'],
+    );
+  }
+
+  @override
+  Map<String, dynamic> toJson() => {
+        'type': type.name,
+        'userId': userId,
+        'tokenString': tokenString,
+        'nonce': nonce,
+        'userEmail': userEmail,
+        'userName': userName,
+      };
+}
+
 /// Class that contains the facebook access token data
-class AccessToken {
+class ClassicToken extends AccessToken {
   /// DateTime with the expires date of this token
   final DateTime expires;
-
-  /// DateTime with the last refresh date of this token
-  final DateTime lastRefresh;
 
   /// the facebook user id
   final String userId;
 
-  /// token provided by facebook to make api calls to the GRAPH API
-  final String token;
-
   /// the facebook application Id
   final String applicationId;
-
-  /// the graph Domain name returned by facebook
-  final String? graphDomain;
 
   /// list of string with the rejected permission by the user (on Web is null)
   final List<String>? declinedPermissions;
@@ -27,38 +68,34 @@ class AccessToken {
   /// list of string with the approved permission by the user (on Web is null)
   final List<String>? grantedPermissions;
 
-  /// is `true` when the token is expired
-  final bool isExpired;
+  final String? authenticationToken;
 
-  AccessToken({
+  ClassicToken({
     required this.declinedPermissions,
     required this.grantedPermissions,
     required this.userId,
     required this.expires,
-    required this.lastRefresh,
-    required this.token,
+    required super.tokenString,
     required this.applicationId,
-    this.graphDomain,
-    required this.isExpired,
+    this.authenticationToken,
+    super.type = AccessTokenType.classic,
   });
 
   /// convert the data provided for the platform channel to one instance of AccessToken
   ///
   /// [json] data returned by the platform channel
-  factory AccessToken.fromJson(Map<String, dynamic> json) {
-    return AccessToken(
+  factory ClassicToken.fromJson(Map<String, dynamic> json) {
+    return ClassicToken(
       userId: json['userId'],
-      token: json['token'],
+      tokenString: json['token'] ?? json['tokenString'],
       expires: DateTime.fromMillisecondsSinceEpoch(
         json['expires'].clamp(
           minMillisecondsSinceEpoch,
           maxMillisecondsSinceEpoch,
         ),
       ),
-      lastRefresh: DateTime.fromMillisecondsSinceEpoch(json['lastRefresh']),
+      authenticationToken: json['authenticationToken'],
       applicationId: json['applicationId'],
-      graphDomain: json['graphDomain'],
-      isExpired: json['isExpired'],
       declinedPermissions: json['declinedPermissions'] != null
           ? List<String>.from(json['declinedPermissions'])
           : null,
@@ -69,15 +106,15 @@ class AccessToken {
   }
 
   /// convert this instance to one Map
+  @override
   Map<String, dynamic> toJson() => {
+        'type': type.name,
         'userId': userId,
-        'token': token,
-        'expires': expires.toIso8601String(),
-        'lastRefresh': lastRefresh.toIso8601String(),
+        'tokenString': tokenString,
+        'expires': expires.millisecondsSinceEpoch,
         'applicationId': applicationId,
-        'graphDomain': graphDomain,
-        'isExpired': isExpired,
         'grantedPermissions': grantedPermissions,
         'declinedPermissions': declinedPermissions,
+        'authenticationToken': authenticationToken,
       };
 }

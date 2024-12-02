@@ -10,12 +10,12 @@ import 'package:provider/provider.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  if (kIsWeb) {
-    await FacebookAuth.i.webInitialize(
+  if (kIsWeb || defaultTargetPlatform == TargetPlatform.macOS) {
+    await FacebookAuth.i.webAndDesktopInitialize(
       appId: '1329834907365798',
       cookie: true,
       xfbml: true,
-      version: "v14.0",
+      version: "v15.0",
     );
   }
   runApp(
@@ -41,13 +41,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return FutureBuilder<bool>(
       future: () async {
-        final sessionRepository = Provider.of<SessionRepository>(context);
-        final user = await sessionRepository.user;
-        if (user != null) {
-          // ignore: use_build_context_synchronously
-          context.read<SessionController>().updateUser(user);
-          return true;
-        }
+        // final sessionRepository = Provider.of<SessionRepository>(context);
+        // final user = await sessionRepository.user;
+        // if (user != null) {
+        //   // ignore: use_build_context_synchronously
+        //   context.read<SessionController>().updateUser(user);
+        //   return true;
+        // }
         return false;
       }.call(),
       builder: (_, snapShot) {

@@ -16,48 +16,55 @@ void main() {
     late FacebookAuth facebookAuth;
     late bool isLogged, isAutoLogAppEventsEnabled;
 
-    setUp(() {
-      debugDefaultTargetPlatformOverride = TargetPlatform.android;
-      isLogged = false;
-      isAutoLogAppEventsEnabled = false;
-      facebookAuth = FacebookAuth.getInstance();
-      channel.setMockMethodCallHandler((MethodCall call) async {
-        switch (call.method) {
-          case "login":
-            isLogged = true;
-            return mockAccessToken;
-          case "expressLogin":
-            isLogged = true;
-            return mockAccessToken;
-          case "getAccessToken":
-            return isLogged ? mockAccessToken : null;
-          case "logOut":
-            isLogged = false;
+    setUp(
+      () {
+        debugDefaultTargetPlatformOverride = TargetPlatform.android;
+        isLogged = false;
+        isAutoLogAppEventsEnabled = false;
+        facebookAuth = FacebookAuth.getInstance();
+        TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger
+            .setMockMethodCallHandler(
+          channel,
+          (MethodCall call) async {
+            switch (call.method) {
+              case "login":
+                isLogged = true;
+                return mockAccessToken;
+              case "expressLogin":
+                isLogged = true;
+                return mockAccessToken;
+              case "getAccessToken":
+                return isLogged ? mockAccessToken : null;
+              case "logOut":
+                isLogged = false;
+                return null;
+
+              case "getUserData":
+                // final String fields = call.arguments['fields'];
+                final data = mockUserData;
+                if (defaultTargetPlatform == TargetPlatform.android) {
+                  return jsonEncode(data);
+                }
+                return data;
+              case "isAutoLogAppEventsEnabled":
+                return isAutoLogAppEventsEnabled;
+
+              case "updateAutoLogAppEventsEnabled":
+                final isIOS = defaultTargetPlatform == TargetPlatform.iOS;
+                if (isIOS) {
+                  isAutoLogAppEventsEnabled = call.arguments['enabled'];
+                }
+            }
             return null;
-
-          case "getUserData":
-            // final String fields = call.arguments['fields'];
-            final data = mockUserData;
-            if (defaultTargetPlatform == TargetPlatform.android) {
-              return jsonEncode(data);
-            }
-            return data;
-          case "isAutoLogAppEventsEnabled":
-            return isAutoLogAppEventsEnabled;
-
-          case "updateAutoLogAppEventsEnabled":
-            final isIOS = defaultTargetPlatform == TargetPlatform.iOS;
-            if (isIOS) {
-              isAutoLogAppEventsEnabled = call.arguments['enabled'];
-            }
-        }
-      });
-    });
+          },
+        );
+      },
+    );
 
     test('login request', () async {
       expect(facebookAuth.isWebSdkInitialized, false);
       expect(await facebookAuth.accessToken, null);
-      await facebookAuth.webInitialize(
+      await facebookAuth.webAndDesktopInitialize(
         appId: "1233443",
         cookie: true,
         xfbml: true,
@@ -69,10 +76,6 @@ void main() {
       expect(await facebookAuth.accessToken, isA<AccessToken>());
       final Map<String, dynamic> userData = await facebookAuth.getUserData();
       expect(userData.containsKey("email"), true);
-      final FacebookPermissions? permissions = await facebookAuth.permissions;
-      expect(permissions, isNotNull);
-      expect(permissions!.granted.length > 0, true);
-      expect(permissions.declined.length == 0, true);
       await facebookAuth.logOut();
       expect(await facebookAuth.accessToken, null);
     });

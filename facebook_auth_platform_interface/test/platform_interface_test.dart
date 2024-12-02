@@ -104,12 +104,11 @@ void main() {
       Map<String, dynamic> userData = await facebookAuth.getUserData();
       expect(accessToken, null);
       expect(userData.length == 0, true);
-      final loginResult = await facebookAuth.login(loginBehavior: LoginBehavior.nativeWithFallback);
+      final loginResult =
+          await facebookAuth.login(loginBehavior: LoginBehavior.webOnly);
       if (loginResult.status == LoginStatus.success) {
         accessToken = loginResult.accessToken;
         expect(accessToken, isNotNull);
-        final accessTokenAsJson = accessToken!.toJson();
-        expect(accessTokenAsJson.containsKey('token'), true);
         expect(await facebookAuth.accessToken, isA<AccessToken>());
         expect((await facebookAuth.expressLogin()), isA<LoginResult>());
         userData = await facebookAuth.getUserData();
@@ -118,14 +117,6 @@ void main() {
         expect(await facebookAuth.accessToken, null);
       }
     });
-
-    test('permissions test', () async {
-      await facebookAuth.login(loginBehavior: LoginBehavior.deviceAuth);
-      final grantedPermissions = (await facebookAuth.permissions)!.granted;
-      expect(grantedPermissions.contains("email"), true);
-      expect(grantedPermissions.contains("user_link"), true);
-    });
-
     test('express login sucess', () async {
       final loginResult = await facebookAuth.expressLogin();
       expect(loginResult.status == LoginStatus.success, true);
@@ -133,7 +124,12 @@ void main() {
 
     test('express login failed', () async {
       debugDefaultTargetPlatformOverride = TargetPlatform.iOS;
-      facebookAuth.webInitialize(appId: "1233443", cookie: true, xfbml: true, version: "v9.0");
+      facebookAuth.webAndDesktopInitialize(
+        appId: "1233443",
+        cookie: true,
+        xfbml: true,
+        version: "v9.0",
+      );
       final loginResult = await facebookAuth.expressLogin();
       print("loginResult.status ${loginResult.status}");
       expect(loginResult.status == LoginStatus.failed, true);

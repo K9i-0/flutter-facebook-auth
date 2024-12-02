@@ -7,10 +7,16 @@ export 'package:flutter_facebook_auth_platform_interface/flutter_facebook_auth_p
         LoginResult,
         FacebookPermissions,
         LoginBehavior,
-        LoginStatus;
+        LoginTracking,
+        LoginStatus,
+        LimitedToken,
+        ClassicToken,
+        AccessTokenType;
 
 /// this class implements the FacebookAuthPlatform interface
 /// and calls to the native APIs on Android, iOS and web.
+///
+// coverage:ignore-start
 class FacebookAuth {
   FacebookAuth._(); // private constructor for singletons
   /// return the same instance of FacebookAuth
@@ -60,8 +66,10 @@ class FacebookAuth {
   ///The above JSON could be change, it depends of your [fields] argument.
   Future<Map<String, dynamic>> getUserData({
     String fields = "name,email,picture.width(200)",
-  }) =>
-      _authPlatform.getUserData(fields: fields);
+  }) async {
+    final result = await _authPlatform.getUserData(fields: fields);
+    return Map<String, dynamic>.from(result);
+  }
 
   /// Sign Out from Facebook
   Future<void> logOut() => _authPlatform.logOut();
@@ -72,34 +80,35 @@ class FacebookAuth {
   ///
   /// [loginBehavior] (only Android) use this param to set the UI for the authentication,
   /// like webview, native app, or a dialog.
+  ///
+  /// [nonce] a custom nonce
   Future<LoginResult> login({
     List<String> permissions = const ['email', 'public_profile'],
-    LoginBehavior loginBehavior = LoginBehavior.dialogOnly,
+    LoginBehavior loginBehavior = LoginBehavior.nativeWithFallback,
+    LoginTracking loginTracking = LoginTracking.limited,
+    String? nonce,
   }) =>
       _authPlatform.login(
         permissions: permissions,
         loginBehavior: loginBehavior,
+        loginTracking: loginTracking,
+        nonce: nonce,
       );
 
   /// call this method (ONLY FOR WEB) to initialize the facebook javascript sdk
-  Future<void> webInitialize({
+  Future<void> webAndDesktopInitialize({
     required String appId,
     required bool cookie,
     required bool xfbml,
     required String version,
   }) {
-    return _authPlatform.webInitialize(
+    return _authPlatform.webAndDesktopInitialize(
       appId: appId,
       cookie: cookie,
       xfbml: xfbml,
       version: version,
     );
   }
-
-  /// returns one instance of FacebookPermission with the granted and declined permissions
-  ///
-  /// It could be null if you exceed the request limit
-  Future<FacebookPermissions?> get permissions => _authPlatform.permissions;
 
   /// use this to know if the facebook sdk was initializated on Web
   /// on Android and iOS is always true
@@ -115,3 +124,4 @@ class FacebookAuth {
   Future<bool> get isAutoLogAppEventsEnabled =>
       _authPlatform.isAutoLogAppEventsEnabled;
 }
+// coverage:ignore-end

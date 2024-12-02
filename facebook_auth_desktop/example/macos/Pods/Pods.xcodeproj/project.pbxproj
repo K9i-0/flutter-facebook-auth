@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
@@ -19,98 +19,153 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		0A13A1B3ECD64D378DA01E4A10C756BC /* flutter_secure_storage_macos-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B8842AC3B518D04FFACE5BBB9060E6DC /* flutter_secure_storage_macos-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2FF7AD14B62400482C3171F209D0CAAA /* FlutterSecureStorageMacosPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B481212E420226FF2734EE102F803B8 /* FlutterSecureStorageMacosPlugin.m */; };
-		47AFCB08C4AAFFD4F39F4654514B6549 /* Pods-Runner-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B3C932BD54DBB963102A89E0F9E3948 /* Pods-Runner-dummy.m */; };
-		4DF8F3E8658A69A17316D542F1D2A94A /* facebook_auth_desktop-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A3A44DE2927313BE86F171A210A8C8C /* facebook_auth_desktop-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5F8CC55CA6BD62D69BA9A3D64B9A5104 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1430F003D39D9906881A6AC724B7931 /* Cocoa.framework */; };
-		6D5AA647842389E128A7677C18C9FAE4 /* facebook_auth_desktop-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE169FDF75855B30550A791DB4A930F /* facebook_auth_desktop-dummy.m */; };
-		7D5B8A91D151E86406FA41B3278DFCAB /* FacebookAuthDesktopPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A830F6CBD013C0C281D602A29EF1E0B7 /* FacebookAuthDesktopPlugin.swift */; };
-		84E62E765E3C162B008681B1F4069F90 /* FlutterSecureStorageMacosPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 676658D7012A7C8DC52B194E6A3202BF /* FlutterSecureStorageMacosPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A069C5AD70CE91967F9A87210D6DE862 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1430F003D39D9906881A6AC724B7931 /* Cocoa.framework */; };
-		A27E461352F18140606E9E08A1B20FE8 /* flutter_secure_storage_macos-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A9FA624CF314CEEF57D11EA77E94D871 /* flutter_secure_storage_macos-dummy.m */; };
+		140139931A2B0C620A034172A742B80A /* FlutterSecureStoragePlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C6545A76F2B213AF1B437DBEB8BB2E /* FlutterSecureStoragePlugin.swift */; };
+		2FEA57F224B910D9F95E796ABE08A599 /* messages.g.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2A2B98F3A13D507D16BE9840F27D09 /* messages.g.swift */; };
+		3F1709D0A30CFA36FDF89F94654E26B7 /* path_provider_foundation-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A6A9F5B129DAD88D995E1A12DF9E8A1B /* path_provider_foundation-dummy.m */; };
+		4652B98DBCFEE9B1399A0A35F2408385 /* PathProviderPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6E9DCA89CAC7F8D0892E0230DF22A7 /* PathProviderPlugin.swift */; };
+		4AD2C5A57BF369EECD7D531F2C463552 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1430F003D39D9906881A6AC724B7931 /* Cocoa.framework */; };
+		4C9A0BE44F743E65E995D2795AF758DF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1430F003D39D9906881A6AC724B7931 /* Cocoa.framework */; };
+		4DF8F3E8658A69A17316D542F1D2A94A /* facebook_auth_desktop-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F11CE91E3A4A6D454909B501ACA29D8C /* facebook_auth_desktop-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		68DD428154EE48C88AA2567DD5313830 /* path_provider_foundation-path_provider_foundation_privacy in Resources */ = {isa = PBXBuildFile; fileRef = 3DBD4BADE27F8B91024E4B4B4DD75DB5 /* path_provider_foundation-path_provider_foundation_privacy */; };
+		69ADFC205E48167DCB4B85516F6D5096 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1430F003D39D9906881A6AC724B7931 /* Cocoa.framework */; };
+		6D5AA647842389E128A7677C18C9FAE4 /* facebook_auth_desktop-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BEEC75698B01370516EBD0DB210ED23 /* facebook_auth_desktop-dummy.m */; };
+		7D5B8A91D151E86406FA41B3278DFCAB /* FacebookAuthDesktopPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC7DFDFE88FC685AD4A4F8B497AB5F8 /* FacebookAuthDesktopPlugin.swift */; };
+		88371B3357E7340AF31AD460F7EEF353 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = A87B202C87F721A978C37B1ABCD9A681 /* PrivacyInfo.xcprivacy */; };
+		89FBC07D273F075F8D04C89F3BF94383 /* flutter_secure_storage_macos-flutter_secure_storage_macos in Resources */ = {isa = PBXBuildFile; fileRef = EE61EFAFACDD872DA0464DD89DD5F07F /* flutter_secure_storage_macos-flutter_secure_storage_macos */; };
+		923D7F674680F94C7C5210F923B7E667 /* flutter_secure_storage_macos-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3B9C785A4388201848298CD55BB72F /* flutter_secure_storage_macos-dummy.m */; };
+		A1B1740FC7C17A25B610DFB7698725F6 /* flutter_secure_storage_macos-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B18F4370897160970E7986279B6824B0 /* flutter_secure_storage_macos-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AC0C7E43A48AD6456425F1424EE84ED0 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = ABB5425CF4D13DEC112CFB053BED9A25 /* PrivacyInfo.xcprivacy */; };
+		B92DB36858AC30D15147B7323986A30B /* FlutterSecureStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB835284AB2E30799758AF555ED26721 /* FlutterSecureStorage.swift */; };
+		C82E4B2F02D6D92F3B58832D9B508C68 /* Pods-Runner-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 96BF45FBE2BC9AD7B2D7E56D01B5EE46 /* Pods-Runner-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EABE7B601A62F6C2BEE5FF4E21BEF368 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1430F003D39D9906881A6AC724B7931 /* Cocoa.framework */; };
-		F2B3B177F39DD1F472441E5FA95332A1 /* Pods-Runner-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 96BF45FBE2BC9AD7B2D7E56D01B5EE46 /* Pods-Runner-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ED56D7D57E04876DD37A00269F65892E /* Pods-Runner-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B3C932BD54DBB963102A89E0F9E3948 /* Pods-Runner-dummy.m */; };
+		F1E7C2244FFFE807BFC6FBBF5D1B744C /* path_provider_foundation-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BC00AC9BDE83C24397B567F162C6DA5 /* path_provider_foundation-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2175FD6AC2483AEBC00901F5300A4A8F /* PBXContainerItemProxy */ = {
+		078BFF393C97CA7C5DC64099D7916411 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CACE6618E7996464E38687E13F67D945;
+			remoteInfo = "path_provider_foundation-path_provider_foundation_privacy";
+		};
+		1223FCC6BB5ABD8FA35A1F17E6DCC6A4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = CA272E8348BAB4CE0B0C804FB7B818C4;
 			remoteInfo = FlutterMacOS;
 		};
-		52150808A334DD0DA0BAF261883DCA3C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CA272E8348BAB4CE0B0C804FB7B818C4;
-			remoteInfo = FlutterMacOS;
-		};
-		80528C7A7D500508BC4B0B2DEB0DF650 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4C7123F25CDE00CCE8BE96E3EC746403;
-			remoteInfo = facebook_auth_desktop;
-		};
-		9866E5A54379437CDBDA89D32B1D3EDF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CA272E8348BAB4CE0B0C804FB7B818C4;
-			remoteInfo = FlutterMacOS;
-		};
-		A083FC251D34FA491D1C1C438A5849FF /* PBXContainerItemProxy */ = {
+		13B29F7AEE73F4187504F041CA3B3EB2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = EF59DE143C0B7645A532B75D0696C617;
 			remoteInfo = flutter_secure_storage_macos;
 		};
+		60FB3C27346692052E52F1F5E62EC780 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C7123F25CDE00CCE8BE96E3EC746403;
+			remoteInfo = facebook_auth_desktop;
+		};
+		6789F00F3166B40F72B019864D8A000B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA272E8348BAB4CE0B0C804FB7B818C4;
+			remoteInfo = FlutterMacOS;
+		};
+		743C24648907B0B601F9CE7E8CBF834F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 56F581DDCB0A032454E604885E17AE3C;
+			remoteInfo = path_provider_foundation;
+		};
+		75450CC57DEBFE6A6FAA19E176CAD0DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 66E77C5DE4BA5F956F8C49C87DB56062;
+			remoteInfo = "flutter_secure_storage_macos-flutter_secure_storage_macos";
+		};
+		7866B2A8105B87E8A6D5694CDB575921 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA272E8348BAB4CE0B0C804FB7B818C4;
+			remoteInfo = FlutterMacOS;
+		};
+		F358855ADD19ED714B106D6C1685D091 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA272E8348BAB4CE0B0C804FB7B818C4;
+			remoteInfo = FlutterMacOS;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0386FCBC113F14A3C4DEAA4F47983AF0 /* flutter_secure_storage_macos-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "flutter_secure_storage_macos-Info.plist"; sourceTree = "<group>"; };
+		03A4C6B2A1FD1129572FD230748D0D74 /* facebook_auth_desktop-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "facebook_auth_desktop-prefix.pch"; sourceTree = "<group>"; };
 		072122A18CADFB45FEDCC4B6B0E5A79A /* facebook_auth_desktop */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = facebook_auth_desktop; path = facebook_auth_desktop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BEEC75698B01370516EBD0DB210ED23 /* facebook_auth_desktop-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "facebook_auth_desktop-dummy.m"; sourceTree = "<group>"; };
+		0D06AF5948B90512A627B5BB626E3F3A /* ResourceBundle-path_provider_foundation_privacy-path_provider_foundation-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-path_provider_foundation_privacy-path_provider_foundation-Info.plist"; sourceTree = "<group>"; };
+		0DE3BB4627415F33E350E9DC210C3A87 /* flutter_secure_storage_macos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = flutter_secure_storage_macos.debug.xcconfig; sourceTree = "<group>"; };
+		1ECEFF172ADCE30B5FA0C3B8A6E04879 /* path_provider_foundation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = path_provider_foundation.debug.xcconfig; sourceTree = "<group>"; };
+		1FA4B9A0FF2A780046C4383A504229E4 /* facebook_auth_desktop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = facebook_auth_desktop.release.xcconfig; sourceTree = "<group>"; };
+		209756501CC1DBA6064BD124B100225D /* facebook_auth_desktop.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = facebook_auth_desktop.modulemap; sourceTree = "<group>"; };
+		221383103503C667660C21FCBF0E0BEA /* path_provider_foundation-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "path_provider_foundation-Info.plist"; sourceTree = "<group>"; };
+		26DAD4208C3EA9667ABF78F6191ACDF7 /* path_provider_foundation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = path_provider_foundation.release.xcconfig; sourceTree = "<group>"; };
+		2884759BACC8053E5223F80513E132D7 /* flutter_secure_storage_macos-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "flutter_secure_storage_macos-prefix.pch"; sourceTree = "<group>"; };
+		2B1EF538CEDB0F86C3DE727DF7E3D7EE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = "../../../../../../../../../../../../.pub-cache/hosted/pub.dev/flutter_secure_storage_macos-3.1.2/LICENSE"; sourceTree = "<group>"; };
 		317C26B9A7CEDD34ADE8F37FAAB7AC20 /* Pods-Runner-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Runner-frameworks.sh"; sourceTree = "<group>"; };
-		36AABC828B12522114B264274EC7647D /* FlutterMacOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FlutterMacOS.debug.xcconfig; sourceTree = "<group>"; };
-		3F9661A72F041D3D16AAE1CDAA036802 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../../../../../../../../LICENSE; sourceTree = "<group>"; };
-		4DF59FDF98A89D5C31F36FEF94BD5340 /* flutter_secure_storage_macos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = flutter_secure_storage_macos.debug.xcconfig; sourceTree = "<group>"; };
+		3DBD4BADE27F8B91024E4B4B4DD75DB5 /* path_provider_foundation-path_provider_foundation_privacy */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "path_provider_foundation-path_provider_foundation_privacy"; path = path_provider_foundation_privacy.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BC00AC9BDE83C24397B567F162C6DA5 /* path_provider_foundation-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "path_provider_foundation-umbrella.h"; sourceTree = "<group>"; };
+		4BE66072CE2BD4FC53E0CA01FB54082C /* flutter_secure_storage_macos-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "flutter_secure_storage_macos-Info.plist"; sourceTree = "<group>"; };
 		51825CD8F0558EFA53D9510F0E5BFA16 /* Pods-Runner-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Runner-Info.plist"; sourceTree = "<group>"; };
-		58D30D7F74665E4A4BB7853F40F1B14A /* facebook_auth_desktop-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "facebook_auth_desktop-Info.plist"; sourceTree = "<group>"; };
-		64C6FB686BCB576B367971CC0215B426 /* FlutterMacOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FlutterMacOS.release.xcconfig; sourceTree = "<group>"; };
+		59D2967717CF1AD44140A376EB245442 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = "../../../../../../../../../../../../.pub-cache/hosted/pub.dev/path_provider_foundation-2.4.0/LICENSE"; sourceTree = "<group>"; };
+		5BC7DFDFE88FC685AD4A4F8B497AB5F8 /* FacebookAuthDesktopPlugin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FacebookAuthDesktopPlugin.swift; path = ../../../../../../../../../macos/Classes/FacebookAuthDesktopPlugin.swift; sourceTree = "<group>"; };
+		5E2644FD26094A5906917C4A0060A843 /* flutter_secure_storage_macos.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = flutter_secure_storage_macos.modulemap; sourceTree = "<group>"; };
+		5F2D76CDA190BA5012CA82B3D01BDBA3 /* FlutterMacOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FlutterMacOS.release.xcconfig; sourceTree = "<group>"; };
 		669E8F25E1897672BDB80B7EB784DA24 /* Pods-Runner */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Runner"; path = Pods_Runner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		676658D7012A7C8DC52B194E6A3202BF /* FlutterSecureStorageMacosPlugin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlutterSecureStorageMacosPlugin.h; path = "../../../../../../../../../../../../../.pub-cache/hosted/pub.dartlang.org/flutter_secure_storage_macos-1.1.0/macos/Classes/FlutterSecureStorageMacosPlugin.h"; sourceTree = "<group>"; };
+		68507AE7BD8BC37412AC9490608B9BF8 /* path_provider_foundation.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = path_provider_foundation.modulemap; sourceTree = "<group>"; };
+		75299C9CF54A474D3806A9FDE05932FD /* FlutterMacOS.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = FlutterMacOS.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		7613BE47024565F760AB07446B2DD1CE /* path_provider_foundation-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "path_provider_foundation-prefix.pch"; sourceTree = "<group>"; };
 		7B3C932BD54DBB963102A89E0F9E3948 /* Pods-Runner-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Runner-dummy.m"; sourceTree = "<group>"; };
-		7B8F7C85E61DE8480AA4311D9EDC07F2 /* facebook_auth_desktop.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = facebook_auth_desktop.modulemap; sourceTree = "<group>"; };
-		7C2734F404292F067580D03BB82E84B4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = "../../../../../../../../../../../../.pub-cache/hosted/pub.dartlang.org/flutter_secure_storage_macos-1.1.0/LICENSE"; sourceTree = "<group>"; };
-		83A4BDADC5283428CABE0396B9CF47CD /* facebook_auth_desktop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = facebook_auth_desktop.debug.xcconfig; sourceTree = "<group>"; };
-		8A3A44DE2927313BE86F171A210A8C8C /* facebook_auth_desktop-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "facebook_auth_desktop-umbrella.h"; sourceTree = "<group>"; };
-		8B481212E420226FF2734EE102F803B8 /* FlutterSecureStorageMacosPlugin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FlutterSecureStorageMacosPlugin.m; path = "../../../../../../../../../../../../../.pub-cache/hosted/pub.dartlang.org/flutter_secure_storage_macos-1.1.0/macos/Classes/FlutterSecureStorageMacosPlugin.m"; sourceTree = "<group>"; };
-		8B69C79D9C6D947152EF23D0710500E1 /* FlutterMacOS.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = FlutterMacOS.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		7BD000F6F275BCD6CB57D6B2E72D20B8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../../../../../../../../LICENSE; sourceTree = "<group>"; };
+		7BD7516F0612CAA535D9E0CB610C760A /* facebook_auth_desktop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = facebook_auth_desktop.debug.xcconfig; sourceTree = "<group>"; };
+		873BCDAA7EC0E9528BC8D302A077B5B6 /* facebook_auth_desktop-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "facebook_auth_desktop-Info.plist"; sourceTree = "<group>"; };
+		90E3DD9F59F81F4A5DA6C7DAFA09B9B9 /* ResourceBundle-flutter_secure_storage_macos-flutter_secure_storage_macos-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-flutter_secure_storage_macos-flutter_secure_storage_macos-Info.plist"; sourceTree = "<group>"; };
 		96BF45FBE2BC9AD7B2D7E56D01B5EE46 /* Pods-Runner-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Runner-umbrella.h"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9F79F8269DC34AC56BB3D1D9652C0D86 /* Pods-Runner.profile.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Runner.profile.xcconfig"; sourceTree = "<group>"; };
 		A5DEDDCD541825388ACA7A6AF69E4553 /* flutter_secure_storage_macos */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = flutter_secure_storage_macos; path = flutter_secure_storage_macos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A60B6E0CAC21011380781F62F459CF6B /* flutter_secure_storage_macos.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = flutter_secure_storage_macos.podspec; path = "../../../../../../../../../../../../.pub-cache/hosted/pub.dartlang.org/flutter_secure_storage_macos-1.1.0/macos/flutter_secure_storage_macos.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A830F6CBD013C0C281D602A29EF1E0B7 /* FacebookAuthDesktopPlugin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FacebookAuthDesktopPlugin.swift; path = ../../../../../../../../../macos/Classes/FacebookAuthDesktopPlugin.swift; sourceTree = "<group>"; };
-		A9FA624CF314CEEF57D11EA77E94D871 /* flutter_secure_storage_macos-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "flutter_secure_storage_macos-dummy.m"; sourceTree = "<group>"; };
-		B78C0FF8C311D82F2A0D5DEE4B9E73B8 /* facebook_auth_desktop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = facebook_auth_desktop.release.xcconfig; sourceTree = "<group>"; };
-		B8842AC3B518D04FFACE5BBB9060E6DC /* flutter_secure_storage_macos-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "flutter_secure_storage_macos-umbrella.h"; sourceTree = "<group>"; };
+		A6A9F5B129DAD88D995E1A12DF9E8A1B /* path_provider_foundation-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "path_provider_foundation-dummy.m"; sourceTree = "<group>"; };
+		A87B202C87F721A978C37B1ABCD9A681 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = "../../../../../../../../../../../../../../../../.pub-cache/hosted/pub.dev/path_provider_foundation-2.4.0/darwin/path_provider_foundation/Sources/path_provider_foundation/Resources/PrivacyInfo.xcprivacy"; sourceTree = "<group>"; };
+		A8C6545A76F2B213AF1B437DBEB8BB2E /* FlutterSecureStoragePlugin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlutterSecureStoragePlugin.swift; path = "../../../../../../../../../../../../../.pub-cache/hosted/pub.dev/flutter_secure_storage_macos-3.1.2/macos/Classes/FlutterSecureStoragePlugin.swift"; sourceTree = "<group>"; };
+		ABB5425CF4D13DEC112CFB053BED9A25 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = "../../../../../../../../../../../../../.pub-cache/hosted/pub.dev/flutter_secure_storage_macos-3.1.2/macos/Resources/PrivacyInfo.xcprivacy"; sourceTree = "<group>"; };
+		AE157A33FEF959A214796BFF348717F6 /* path_provider_foundation */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = path_provider_foundation; path = path_provider_foundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B18F4370897160970E7986279B6824B0 /* flutter_secure_storage_macos-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "flutter_secure_storage_macos-umbrella.h"; sourceTree = "<group>"; };
+		BB835284AB2E30799758AF555ED26721 /* FlutterSecureStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlutterSecureStorage.swift; path = "../../../../../../../../../../../../../.pub-cache/hosted/pub.dev/flutter_secure_storage_macos-3.1.2/macos/Classes/FlutterSecureStorage.swift"; sourceTree = "<group>"; };
 		C1430F003D39D9906881A6AC724B7931 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		C6EA98402A94995D022D330B64B5203D /* Pods-Runner-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Runner-acknowledgements.markdown"; sourceTree = "<group>"; };
-		CB36B00AC01EFBC745F278446E700244 /* facebook_auth_desktop-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "facebook_auth_desktop-prefix.pch"; sourceTree = "<group>"; };
+		C9E4FF99566BD3001EAD3B49B1F642DC /* path_provider_foundation.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = path_provider_foundation.podspec; path = "../../../../../../../../../../../../.pub-cache/hosted/pub.dev/path_provider_foundation-2.4.0/darwin/path_provider_foundation.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		CDAECCF4B5E08124ED410F09FD5A5DF9 /* Pods-Runner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Runner.debug.xcconfig"; sourceTree = "<group>"; };
-		CFE169FDF75855B30550A791DB4A930F /* facebook_auth_desktop-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "facebook_auth_desktop-dummy.m"; sourceTree = "<group>"; };
 		D2FA70CA298C392CB8332ADEEDD1CE85 /* Pods-Runner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Runner.release.xcconfig"; sourceTree = "<group>"; };
 		D9F2B4CB813B4BDC4D164C6E0868930A /* Pods-Runner-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Runner-acknowledgements.plist"; sourceTree = "<group>"; };
-		DF5EED00C8C9B88C127BBDDF1F8A3563 /* facebook_auth_desktop.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = facebook_auth_desktop.podspec; path = ../../../../../../../../macos/facebook_auth_desktop.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		ED4D02D44BED261C873F9A4FE44A0B28 /* flutter_secure_storage_macos-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "flutter_secure_storage_macos-prefix.pch"; sourceTree = "<group>"; };
-		EFAA6C26ACA86F4D7D5BC1D85F706365 /* flutter_secure_storage_macos.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = flutter_secure_storage_macos.modulemap; sourceTree = "<group>"; };
-		F0E1DE3426BB6ABE34A2CA9FF2CD0478 /* flutter_secure_storage_macos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = flutter_secure_storage_macos.release.xcconfig; sourceTree = "<group>"; };
+		DD6E9DCA89CAC7F8D0892E0230DF22A7 /* PathProviderPlugin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PathProviderPlugin.swift; path = "../../../../../../../../../../../../../../../.pub-cache/hosted/pub.dev/path_provider_foundation-2.4.0/darwin/path_provider_foundation/Sources/path_provider_foundation/PathProviderPlugin.swift"; sourceTree = "<group>"; };
+		E0D799E7B4E02B470C3965D97637C9DB /* facebook_auth_desktop.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = facebook_auth_desktop.podspec; path = ../../../../../../../../macos/facebook_auth_desktop.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		EE3B9C785A4388201848298CD55BB72F /* flutter_secure_storage_macos-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "flutter_secure_storage_macos-dummy.m"; sourceTree = "<group>"; };
+		EE61EFAFACDD872DA0464DD89DD5F07F /* flutter_secure_storage_macos-flutter_secure_storage_macos */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "flutter_secure_storage_macos-flutter_secure_storage_macos"; path = flutter_secure_storage_macos.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		F00FC4E12D698907F3D16AAB39E40FCE /* flutter_secure_storage_macos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = flutter_secure_storage_macos.release.xcconfig; sourceTree = "<group>"; };
+		F11CE91E3A4A6D454909B501ACA29D8C /* facebook_auth_desktop-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "facebook_auth_desktop-umbrella.h"; sourceTree = "<group>"; };
 		F49C32B3B8CF59AB437BFD7314674868 /* Pods-Runner.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Runner.modulemap"; sourceTree = "<group>"; };
+		F783546EE827535FC2A114A8C1E4DCDC /* FlutterMacOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FlutterMacOS.debug.xcconfig; sourceTree = "<group>"; };
+		FB2A2B98F3A13D507D16BE9840F27D09 /* messages.g.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = messages.g.swift; path = "../../../../../../../../../../../../../../../.pub-cache/hosted/pub.dev/path_provider_foundation-2.4.0/darwin/path_provider_foundation/Sources/path_provider_foundation/messages.g.swift"; sourceTree = "<group>"; };
+		FF373A06A1DB0E011C34853F5B9F192B /* flutter_secure_storage_macos.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = flutter_secure_storage_macos.podspec; path = "../../../../../../../../../../../../.pub-cache/hosted/pub.dev/flutter_secure_storage_macos-3.1.2/macos/flutter_secure_storage_macos.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,246 +177,462 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BD99619EA0BFBADBC8144ABAD4236F94 /* Frameworks */ = {
+		602EC3E9E159143BE56A5498633D5FBB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F8CC55CA6BD62D69BA9A3D64B9A5104 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EB06E852AED5678B6F8615203836300E /* Frameworks */ = {
+		6835390CB4186A388EB2F40476A1EC33 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A069C5AD70CE91967F9A87210D6DE862 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C9CFA1F134286F648EEA7BF6DBEDD6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C9A0BE44F743E65E995D2795AF758DF /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		988F6E4D32084F2B2F1A3DF8C85F2FE6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69ADFC205E48167DCB4B85516F6D5096 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D444F330A8283977AB6A9460117CDA0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AD2C5A57BF369EECD7D531F2C463552 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		002FE951853EFD2E1CE96D0AEC506CD8 /* flutter */ = {
+		00F6DFC9685F4EC7190CDB786E6D8237 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				0B6BF297DF46FA89BF9B38C7C447ADE8 /* flutter-facebook-auth */,
-			);
-			name = flutter;
-			path = flutter;
-			sourceTree = "<group>";
-		};
-		03E3A9E3B6C4F152A7412BCE7FA14406 /* facebook_auth_desktop */ = {
-			isa = PBXGroup;
-			children = (
-				14CAD3A14F8C05DBDFB2CBBBEBA940EB /* macos */,
-			);
-			name = facebook_auth_desktop;
-			path = facebook_auth_desktop;
-			sourceTree = "<group>";
-		};
-		073E3D577A815681F5BE40751B5F6D55 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				DF5EED00C8C9B88C127BBDDF1F8A3563 /* facebook_auth_desktop.podspec */,
-				3F9661A72F041D3D16AAE1CDAA036802 /* LICENSE */,
+				75299C9CF54A474D3806A9FDE05932FD /* FlutterMacOS.podspec */,
 			);
 			name = Pod;
 			sourceTree = "<group>";
 		};
-		0B0F8557C17E8B5F4F276FF2BD988D75 /* flutter_secure_storage_macos */ = {
+		01A16608E95842E577B5D1D22AAF9D04 /* flutter_secure_storage_macos */ = {
 			isa = PBXGroup;
 			children = (
-				9E17A5BEFD80484389B521D5289403DC /* .. */,
-				67551E62A1FC90EEA42D48509DB6C73E /* Pod */,
-				3137D97F99915471F3D39140DA94722C /* Support Files */,
+				82B577E4984DA46CC16AE8CFE278B2D3 /* .. */,
+				04F1FCB2E3EB755686875C55B69D4CD5 /* Pod */,
+				7839C15AEE0DFECBBAF169E9697B4C6A /* Support Files */,
 			);
 			name = flutter_secure_storage_macos;
 			path = ../Flutter/ephemeral/.symlinks/plugins/flutter_secure_storage_macos/macos;
 			sourceTree = "<group>";
 		};
-		0B6BF297DF46FA89BF9B38C7C447ADE8 /* flutter-facebook-auth */ = {
+		02B0C033303181848848B3C523C87A3A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				BE8B21359D9102D0A38D509CBF2F0801 /* facebook_auth_desktop */,
+				ABB5425CF4D13DEC112CFB053BED9A25 /* PrivacyInfo.xcprivacy */,
 			);
-			name = "flutter-facebook-auth";
-			path = "flutter-facebook-auth";
+			name = Resources;
+			path = Resources;
 			sourceTree = "<group>";
 		};
-		138D0447DDF02CDBB964A52734FB277E /* macos */ = {
+		02E1C5FE540E6395AE0CA700541DB5B2 /* .. */ = {
 			isa = PBXGroup;
 			children = (
-				DFC1581E48EE27EF4CBBE8A09545DE17 /* Classes */,
-			);
-			name = macos;
-			path = macos;
-			sourceTree = "<group>";
-		};
-		14C462DF952F6B5D4F1315E8DC0510A3 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				79626A4C20B7F51D944B933A93B8CFBC /* facebook_auth_desktop */,
-				0B0F8557C17E8B5F4F276FF2BD988D75 /* flutter_secure_storage_macos */,
-				8DC9D5D6E35F63605086B49E27FA0ACC /* FlutterMacOS */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		14CAD3A14F8C05DBDFB2CBBBEBA940EB /* macos */ = {
-			isa = PBXGroup;
-			children = (
-				39204A23BBC423F1E7FBEAE326D671F1 /* Classes */,
-			);
-			name = macos;
-			path = macos;
-			sourceTree = "<group>";
-		};
-		14CB63C3C26835F41ECE0137B01FE647 /* .. */ = {
-			isa = PBXGroup;
-			children = (
-				5975819C0C9B6B5029E1013498A7A012 /* Documents */,
+				67CAB0B30EBAAC583027587D2289E224 /* .. */,
 			);
 			name = ..;
 			path = ..;
 			sourceTree = "<group>";
 		};
-		3137D97F99915471F3D39140DA94722C /* Support Files */ = {
+		03378E20DADFF63998FD879FCCD38FB7 /* example */ = {
 			isa = PBXGroup;
 			children = (
-				EFAA6C26ACA86F4D7D5BC1D85F706365 /* flutter_secure_storage_macos.modulemap */,
-				A9FA624CF314CEEF57D11EA77E94D871 /* flutter_secure_storage_macos-dummy.m */,
-				0386FCBC113F14A3C4DEAA4F47983AF0 /* flutter_secure_storage_macos-Info.plist */,
-				ED4D02D44BED261C873F9A4FE44A0B28 /* flutter_secure_storage_macos-prefix.pch */,
-				B8842AC3B518D04FFACE5BBB9060E6DC /* flutter_secure_storage_macos-umbrella.h */,
-				4DF59FDF98A89D5C31F36FEF94BD5340 /* flutter_secure_storage_macos.debug.xcconfig */,
-				F0E1DE3426BB6ABE34A2CA9FF2CD0478 /* flutter_secure_storage_macos.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../../../../../../Pods/Target Support Files/flutter_secure_storage_macos";
-			sourceTree = "<group>";
-		};
-		39204A23BBC423F1E7FBEAE326D671F1 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				A830F6CBD013C0C281D602A29EF1E0B7 /* FacebookAuthDesktopPlugin.swift */,
-			);
-			name = Classes;
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		3B71729991B6D7D9E01D528BB8152B50 /* .. */ = {
-			isa = PBXGroup;
-			children = (
-				83AAD1449337DA7CA34B4ACE70C9E198 /* .. */,
-			);
-			name = ..;
-			path = ..;
-			sourceTree = "<group>";
-		};
-		40D1099954D002728D9EC05529520435 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				7B8F7C85E61DE8480AA4311D9EDC07F2 /* facebook_auth_desktop.modulemap */,
-				CFE169FDF75855B30550A791DB4A930F /* facebook_auth_desktop-dummy.m */,
-				58D30D7F74665E4A4BB7853F40F1B14A /* facebook_auth_desktop-Info.plist */,
-				CB36B00AC01EFBC745F278446E700244 /* facebook_auth_desktop-prefix.pch */,
-				8A3A44DE2927313BE86F171A210A8C8C /* facebook_auth_desktop-umbrella.h */,
-				83A4BDADC5283428CABE0396B9CF47CD /* facebook_auth_desktop.debug.xcconfig */,
-				B78C0FF8C311D82F2A0D5DEE4B9E73B8 /* facebook_auth_desktop.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../../../../../../Pods/Target Support Files/facebook_auth_desktop";
-			sourceTree = "<group>";
-		};
-		43D09A068F976A1ACC3F5E2FA3EBBB6C /* .. */ = {
-			isa = PBXGroup;
-			children = (
-				58DC6AA646A0AEF9A9316613F96E1343 /* .. */,
-			);
-			name = ..;
-			path = ../../../../../../../../macos;
-			sourceTree = "<group>";
-		};
-		4A5A77918AF00AAFA57CABAD5CA8F3D5 /* .. */ = {
-			isa = PBXGroup;
-			children = (
-				14CB63C3C26835F41ECE0137B01FE647 /* .. */,
-			);
-			name = ..;
-			path = ..;
-			sourceTree = "<group>";
-		};
-		5165FA9BAFF8094E9FD40BAA1FF465B5 /* example */ = {
-			isa = PBXGroup;
-			children = (
-				E8066B8E8C080CF48423C8B7126868DC /* macos */,
+				3A1A251FA6C0C8871B17B8A270B45FFA /* macos */,
 			);
 			name = example;
 			path = example;
 			sourceTree = "<group>";
 		};
-		58DC6AA646A0AEF9A9316613F96E1343 /* .. */ = {
+		04030D8B2017F909EA71142A3D562855 /* ephemeral */ = {
 			isa = PBXGroup;
 			children = (
-				BD40102B530FEEFEADB4B6D6E2C693E0 /* example */,
+				B5DB28AC00ADA0DCF81E55DBC7753C0B /* .symlinks */,
+			);
+			name = ephemeral;
+			path = ephemeral;
+			sourceTree = "<group>";
+		};
+		04F1FCB2E3EB755686875C55B69D4CD5 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				FF373A06A1DB0E011C34853F5B9F192B /* flutter_secure_storage_macos.podspec */,
+				2B1EF538CEDB0F86C3DE727DF7E3D7EE /* LICENSE */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		05C977226C5EC5CA027961F387E3A8B2 /* ephemeral */ = {
+			isa = PBXGroup;
+			children = (
+				A785CF3677501A699C8754870F71D9CD /* .symlinks */,
+			);
+			name = ephemeral;
+			path = ephemeral;
+			sourceTree = "<group>";
+		};
+		08C1BE5B4833E1B9017AF9DB3CDB86BA /* macos */ = {
+			isa = PBXGroup;
+			children = (
+				67130B79612DE3A2FA68504A927FCE76 /* Flutter */,
+			);
+			name = macos;
+			path = macos;
+			sourceTree = "<group>";
+		};
+		09C6F83A65EC6D1AF77E5F85F7ACA27A /* flutter-facebook-auth */ = {
+			isa = PBXGroup;
+			children = (
+				425908E796BDCF1D3DC43B8FD9623F12 /* facebook_auth_desktop */,
+			);
+			name = "flutter-facebook-auth";
+			path = "flutter-facebook-auth";
+			sourceTree = "<group>";
+		};
+		0A7BEA0CFC56C88AA7377DC1AB772387 /* macos */ = {
+			isa = PBXGroup;
+			children = (
+				88F2DEE78C1D6F49E5910392685A0F25 /* Classes */,
+				02B0C033303181848848B3C523C87A3A /* Resources */,
+			);
+			name = macos;
+			path = macos;
+			sourceTree = "<group>";
+		};
+		0B4379F2EAAE41A97582BB5114BEA2A6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				209756501CC1DBA6064BD124B100225D /* facebook_auth_desktop.modulemap */,
+				0BEEC75698B01370516EBD0DB210ED23 /* facebook_auth_desktop-dummy.m */,
+				873BCDAA7EC0E9528BC8D302A077B5B6 /* facebook_auth_desktop-Info.plist */,
+				03A4C6B2A1FD1129572FD230748D0D74 /* facebook_auth_desktop-prefix.pch */,
+				F11CE91E3A4A6D454909B501ACA29D8C /* facebook_auth_desktop-umbrella.h */,
+				7BD7516F0612CAA535D9E0CB610C760A /* facebook_auth_desktop.debug.xcconfig */,
+				1FA4B9A0FF2A780046C4383A504229E4 /* facebook_auth_desktop.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../../../../../../Pods/Target Support Files/facebook_auth_desktop";
+			sourceTree = "<group>";
+		};
+		0F13BD63FFA0C75D7F215CD827BD76A4 /* .. */ = {
+			isa = PBXGroup;
+			children = (
+				02E1C5FE540E6395AE0CA700541DB5B2 /* .. */,
 			);
 			name = ..;
-			path = ..;
+			path = "../../../../../../../../../../../../.pub-cache/hosted/pub.dev/path_provider_foundation-2.4.0/darwin/path_provider_foundation/Sources";
 			sourceTree = "<group>";
 		};
-		5975819C0C9B6B5029E1013498A7A012 /* Documents */ = {
+		1473E3E607A01DAB31D9169D07D601EE /* path_provider_foundation */ = {
 			isa = PBXGroup;
 			children = (
-				002FE951853EFD2E1CE96D0AEC506CD8 /* flutter */,
+				1FF658C75DD753FF43FDEAB17F080437 /* Sources */,
 			);
-			name = Documents;
-			path = Documents;
+			name = path_provider_foundation;
+			path = path_provider_foundation;
 			sourceTree = "<group>";
 		};
-		5AE73A6F5C5DA0373E98A95B7394EA96 /* Products */ = {
+		17E71564AC7B87B6FB5E7E37D865A162 /* .. */ = {
 			isa = PBXGroup;
 			children = (
-				072122A18CADFB45FEDCC4B6B0E5A79A /* facebook_auth_desktop */,
-				A5DEDDCD541825388ACA7A6AF69E4553 /* flutter_secure_storage_macos */,
-				669E8F25E1897672BDB80B7EB784DA24 /* Pods-Runner */,
+				98D9373E842AD5F1216F9BD189FB3519 /* Documents */,
 			);
-			name = Products;
+			name = ..;
+			path = .;
 			sourceTree = "<group>";
 		};
-		5FD75DB58514FD113960F28CA2E62438 /* Flutter */ = {
+		1B0697500F1ECB194F4B579435D5A70B /* flutter */ = {
 			isa = PBXGroup;
 			children = (
-				E28C3A5C591925328DB4D1A9566E4F5B /* ephemeral */,
+				B3249C2C39772F7D12949521BAF52698 /* flutter-facebook-auth */,
+			);
+			name = flutter;
+			path = flutter;
+			sourceTree = "<group>";
+		};
+		1D063690F2EF49929C7EA95EA693D996 /* darwin */ = {
+			isa = PBXGroup;
+			children = (
+				1473E3E607A01DAB31D9169D07D601EE /* path_provider_foundation */,
+			);
+			name = darwin;
+			path = darwin;
+			sourceTree = "<group>";
+		};
+		1FF658C75DD753FF43FDEAB17F080437 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				4756E81DA5B47E68F3EBF6FD13DF0AA3 /* path_provider_foundation */,
+			);
+			name = Sources;
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		20299541974EB047096199DDE6F82211 /* path_provider_foundation */ = {
+			isa = PBXGroup;
+			children = (
+				FB2A2B98F3A13D507D16BE9840F27D09 /* messages.g.swift */,
+				DD6E9DCA89CAC7F8D0892E0230DF22A7 /* PathProviderPlugin.swift */,
+			);
+			name = path_provider_foundation;
+			path = path_provider_foundation;
+			sourceTree = "<group>";
+		};
+		20FD836708CD4A621AA7EE3879B49AE0 /* example */ = {
+			isa = PBXGroup;
+			children = (
+				6C1027D52838CD22A4CE4D05CFA92016 /* macos */,
+			);
+			name = example;
+			path = example;
+			sourceTree = "<group>";
+		};
+		25631D8AB516E777CA8E441FAD3EEDDF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A87B202C87F721A978C37B1ABCD9A681 /* PrivacyInfo.xcprivacy */,
+			);
+			name = Resources;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		291D7045BEF723625504B356690064E0 /* Flutter */ = {
+			isa = PBXGroup;
+			children = (
+				99D760564320E46B67B3B03781D5AF72 /* ephemeral */,
 			);
 			name = Flutter;
 			path = Flutter;
 			sourceTree = "<group>";
 		};
-		67551E62A1FC90EEA42D48509DB6C73E /* Pod */ = {
+		303A930FC304620F490E56E4537A86C6 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				A60B6E0CAC21011380781F62F459CF6B /* flutter_secure_storage_macos.podspec */,
-				7C2734F404292F067580D03BB82E84B4 /* LICENSE */,
+				E1E4B8B4E40C7938D2994701CCC667BA /* facebook_auth_desktop */,
+				01A16608E95842E577B5D1D22AAF9D04 /* flutter_secure_storage_macos */,
+				43918BBF1024F4265AE4FA06A8547AB8 /* FlutterMacOS */,
+				A22A235BDCD5F0FEAC036C1A83203E40 /* path_provider_foundation */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		3219CD9734662ABACAF5F1C09EE23F85 /* .. */ = {
+			isa = PBXGroup;
+			children = (
+				D9E8EFC001FCF80D9E9F55B4A176EA28 /* .. */,
+			);
+			name = ..;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		3A1A251FA6C0C8871B17B8A270B45FFA /* macos */ = {
+			isa = PBXGroup;
+			children = (
+				A67330D0493E7BEECCF0E6AF3659AFE3 /* Flutter */,
+			);
+			name = macos;
+			path = macos;
+			sourceTree = "<group>";
+		};
+		3CAC876933908BB2069D3C328A72DC34 /* flutter_secure_storage_macos */ = {
+			isa = PBXGroup;
+			children = (
+				0A7BEA0CFC56C88AA7377DC1AB772387 /* macos */,
+			);
+			name = flutter_secure_storage_macos;
+			path = flutter_secure_storage_macos;
+			sourceTree = "<group>";
+		};
+		425908E796BDCF1D3DC43B8FD9623F12 /* facebook_auth_desktop */ = {
+			isa = PBXGroup;
+			children = (
+				20FD836708CD4A621AA7EE3879B49AE0 /* example */,
+			);
+			name = facebook_auth_desktop;
+			path = facebook_auth_desktop;
+			sourceTree = "<group>";
+		};
+		43918BBF1024F4265AE4FA06A8547AB8 /* FlutterMacOS */ = {
+			isa = PBXGroup;
+			children = (
+				00F6DFC9685F4EC7190CDB786E6D8237 /* Pod */,
+				E1DC35D53E48E027E745FC400CDE6690 /* Support Files */,
+			);
+			name = FlutterMacOS;
+			path = ../Flutter/ephemeral;
+			sourceTree = "<group>";
+		};
+		45E69205C7EF55DC5E4DFB577656ABD9 /* .. */ = {
+			isa = PBXGroup;
+			children = (
+				4B14C8C7A2515EF5A28BEA1694C6463D /* Documents */,
+			);
+			name = ..;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		4756E81DA5B47E68F3EBF6FD13DF0AA3 /* path_provider_foundation */ = {
+			isa = PBXGroup;
+			children = (
+				25631D8AB516E777CA8E441FAD3EEDDF /* Resources */,
+			);
+			name = path_provider_foundation;
+			path = path_provider_foundation;
+			sourceTree = "<group>";
+		};
+		47FD0F6D5C23F1B38CC00E83F259F544 /* facebook_auth_desktop */ = {
+			isa = PBXGroup;
+			children = (
+				AF05FB3723473AACB26C19F3762A9B7C /* example */,
+			);
+			name = facebook_auth_desktop;
+			path = facebook_auth_desktop;
+			sourceTree = "<group>";
+		};
+		49C6D31641E9E810E1CAD2EF23E011C3 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				E0D799E7B4E02B470C3965D97637C9DB /* facebook_auth_desktop.podspec */,
+				7BD000F6F275BCD6CB57D6B2E72D20B8 /* LICENSE */,
 			);
 			name = Pod;
 			sourceTree = "<group>";
 		};
-		6AC151ADFE63890B2D029D2E0E9015FF /* .symlinks */ = {
+		4B14C8C7A2515EF5A28BEA1694C6463D /* Documents */ = {
 			isa = PBXGroup;
 			children = (
-				9903A8E5378619C558226D4BBBF74126 /* plugins */,
+				A7D1519BD647586B3C2CF34482AF3A68 /* flutter */,
+			);
+			name = Documents;
+			path = Documents;
+			sourceTree = "<group>";
+		};
+		4CC87E6C4ED8254778E040BAEDA77115 /* .symlinks */ = {
+			isa = PBXGroup;
+			children = (
+				71ED7B02F56637DABFD9EA0C2B346EA6 /* plugins */,
 			);
 			name = .symlinks;
 			path = .symlinks;
 			sourceTree = "<group>";
 		};
-		6FA24F24B8C3ABDDBDC2DFF355DC5C80 /* .symlinks */ = {
+		51A95AC81BA956480D208B1441A44EDC /* macos */ = {
 			isa = PBXGroup;
 			children = (
-				851051A5EE496709A5CB3F47802F5A27 /* plugins */,
+				A34F9844CE1B50BD7EF21CF4B41D89AD /* Classes */,
 			);
-			name = .symlinks;
-			path = .symlinks;
+			name = macos;
+			path = macos;
+			sourceTree = "<group>";
+		};
+		5D28AE7283357166DD5ABF7E9D9DB95E /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				20299541974EB047096199DDE6F82211 /* path_provider_foundation */,
+			);
+			name = Sources;
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		67130B79612DE3A2FA68504A927FCE76 /* Flutter */ = {
+			isa = PBXGroup;
+			children = (
+				05C977226C5EC5CA027961F387E3A8B2 /* ephemeral */,
+			);
+			name = Flutter;
+			path = Flutter;
+			sourceTree = "<group>";
+		};
+		67CAB0B30EBAAC583027587D2289E224 /* .. */ = {
+			isa = PBXGroup;
+			children = (
+				FD1204CCCB68F8E2C7A3E4743FE342D8 /* .. */,
+			);
+			name = ..;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		6C1027D52838CD22A4CE4D05CFA92016 /* macos */ = {
+			isa = PBXGroup;
+			children = (
+				7D0BFE110853A312380830914923777F /* Flutter */,
+			);
+			name = macos;
+			path = macos;
+			sourceTree = "<group>";
+		};
+		6D7981EBD118B210AB5BE33399273646 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				072122A18CADFB45FEDCC4B6B0E5A79A /* facebook_auth_desktop */,
+				A5DEDDCD541825388ACA7A6AF69E4553 /* flutter_secure_storage_macos */,
+				EE61EFAFACDD872DA0464DD89DD5F07F /* flutter_secure_storage_macos-flutter_secure_storage_macos */,
+				AE157A33FEF959A214796BFF348717F6 /* path_provider_foundation */,
+				3DBD4BADE27F8B91024E4B4B4DD75DB5 /* path_provider_foundation-path_provider_foundation_privacy */,
+				669E8F25E1897672BDB80B7EB784DA24 /* Pods-Runner */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6F1C055F3B0F1EA6D857616F2C5C8395 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				68507AE7BD8BC37412AC9490608B9BF8 /* path_provider_foundation.modulemap */,
+				A6A9F5B129DAD88D995E1A12DF9E8A1B /* path_provider_foundation-dummy.m */,
+				221383103503C667660C21FCBF0E0BEA /* path_provider_foundation-Info.plist */,
+				7613BE47024565F760AB07446B2DD1CE /* path_provider_foundation-prefix.pch */,
+				4BC00AC9BDE83C24397B567F162C6DA5 /* path_provider_foundation-umbrella.h */,
+				1ECEFF172ADCE30B5FA0C3B8A6E04879 /* path_provider_foundation.debug.xcconfig */,
+				26DAD4208C3EA9667ABF78F6191ACDF7 /* path_provider_foundation.release.xcconfig */,
+				0D06AF5948B90512A627B5BB626E3F3A /* ResourceBundle-path_provider_foundation_privacy-path_provider_foundation-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../../../../../../Pods/Target Support Files/path_provider_foundation";
+			sourceTree = "<group>";
+		};
+		71ED7B02F56637DABFD9EA0C2B346EA6 /* plugins */ = {
+			isa = PBXGroup;
+			children = (
+				BC86B7852B737ABCDF836FC068E525A2 /* facebook_auth_desktop */,
+			);
+			name = plugins;
+			path = plugins;
+			sourceTree = "<group>";
+		};
+		7839C15AEE0DFECBBAF169E9697B4C6A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5E2644FD26094A5906917C4A0060A843 /* flutter_secure_storage_macos.modulemap */,
+				EE3B9C785A4388201848298CD55BB72F /* flutter_secure_storage_macos-dummy.m */,
+				4BE66072CE2BD4FC53E0CA01FB54082C /* flutter_secure_storage_macos-Info.plist */,
+				2884759BACC8053E5223F80513E132D7 /* flutter_secure_storage_macos-prefix.pch */,
+				B18F4370897160970E7986279B6824B0 /* flutter_secure_storage_macos-umbrella.h */,
+				0DE3BB4627415F33E350E9DC210C3A87 /* flutter_secure_storage_macos.debug.xcconfig */,
+				F00FC4E12D698907F3D16AAB39E40FCE /* flutter_secure_storage_macos.release.xcconfig */,
+				90E3DD9F59F81F4A5DA6C7DAFA09B9B9 /* ResourceBundle-flutter_secure_storage_macos-flutter_secure_storage_macos-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../../../../../../Pods/Target Support Files/flutter_secure_storage_macos";
 			sourceTree = "<group>";
 		};
 		791C6E4B424AF06279F8918FA67B8ED6 /* Targets Support Files */ = {
@@ -370,17 +641,6 @@
 				7B0D67477903E1EB8D6A9F9AF51BC5CC /* Pods-Runner */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		79626A4C20B7F51D944B933A93B8CFBC /* facebook_auth_desktop */ = {
-			isa = PBXGroup;
-			children = (
-				43D09A068F976A1ACC3F5E2FA3EBBB6C /* .. */,
-				073E3D577A815681F5BE40751B5F6D55 /* Pod */,
-				40D1099954D002728D9EC05529520435 /* Support Files */,
-			);
-			name = facebook_auth_desktop;
-			path = ../Flutter/ephemeral/.symlinks/plugins/facebook_auth_desktop/macos;
 			sourceTree = "<group>";
 		};
 		7B0D67477903E1EB8D6A9F9AF51BC5CC /* Pods-Runner */ = {
@@ -401,152 +661,316 @@
 			path = "Target Support Files/Pods-Runner";
 			sourceTree = "<group>";
 		};
-		83AAD1449337DA7CA34B4ACE70C9E198 /* .. */ = {
+		7C1B2F52DB7D842C0A398135186FECED /* flutter-facebook-auth */ = {
 			isa = PBXGroup;
 			children = (
-				4A5A77918AF00AAFA57CABAD5CA8F3D5 /* .. */,
+				47FD0F6D5C23F1B38CC00E83F259F544 /* facebook_auth_desktop */,
+			);
+			name = "flutter-facebook-auth";
+			path = "flutter-facebook-auth";
+			sourceTree = "<group>";
+		};
+		7D0BFE110853A312380830914923777F /* Flutter */ = {
+			isa = PBXGroup;
+			children = (
+				04030D8B2017F909EA71142A3D562855 /* ephemeral */,
+			);
+			name = Flutter;
+			path = Flutter;
+			sourceTree = "<group>";
+		};
+		7F33124547EE99B2AC75DBCEC5A66EAF /* .. */ = {
+			isa = PBXGroup;
+			children = (
+				A9C94A4B2109387857E5C0AE0F1DE06C /* .. */,
 			);
 			name = ..;
 			path = ..;
 			sourceTree = "<group>";
 		};
-		851051A5EE496709A5CB3F47802F5A27 /* plugins */ = {
+		82462B31726F08478BB500DE5429FEFB /* plugins */ = {
 			isa = PBXGroup;
 			children = (
-				BAD1855F2E31233D8E76E66C89058656 /* flutter_secure_storage_macos */,
+				C8FEF22A4B654DD8C99B95CD88DF7FD5 /* path_provider_foundation */,
 			);
 			name = plugins;
 			path = plugins;
 			sourceTree = "<group>";
 		};
-		8DC9D5D6E35F63605086B49E27FA0ACC /* FlutterMacOS */ = {
+		82B577E4984DA46CC16AE8CFE278B2D3 /* .. */ = {
 			isa = PBXGroup;
 			children = (
-				D4662FD84ACFE89D0A3558F4ADE29574 /* Pod */,
-				BC4E347063E5CE1466610C119F8E6938 /* Support Files */,
-			);
-			name = FlutterMacOS;
-			path = ../Flutter/ephemeral;
-			sourceTree = "<group>";
-		};
-		9903A8E5378619C558226D4BBBF74126 /* plugins */ = {
-			isa = PBXGroup;
-			children = (
-				03E3A9E3B6C4F152A7412BCE7FA14406 /* facebook_auth_desktop */,
-			);
-			name = plugins;
-			path = plugins;
-			sourceTree = "<group>";
-		};
-		9E17A5BEFD80484389B521D5289403DC /* .. */ = {
-			isa = PBXGroup;
-			children = (
-				CA573542B204481A65539D156D475F94 /* .. */,
+				D2F8672D8F703607F491F2EF62909361 /* .. */,
 			);
 			name = ..;
-			path = "../../../../../../../../../../../../.pub-cache/hosted/pub.dartlang.org/flutter_secure_storage_macos-1.1.0/macos";
+			path = "../../../../../../../../../../../../.pub-cache/hosted/pub.dev/flutter_secure_storage_macos-3.1.2/macos";
 			sourceTree = "<group>";
 		};
-		BAD1855F2E31233D8E76E66C89058656 /* flutter_secure_storage_macos */ = {
+		8648E6D69D44404017DA0C75CA30B657 /* path_provider_foundation */ = {
 			isa = PBXGroup;
 			children = (
-				138D0447DDF02CDBB964A52734FB277E /* macos */,
+				C88A1344DFCE8A89EAD1B84DF68ABA67 /* darwin */,
 			);
-			name = flutter_secure_storage_macos;
-			path = flutter_secure_storage_macos;
+			name = path_provider_foundation;
+			path = path_provider_foundation;
 			sourceTree = "<group>";
 		};
-		BC4E347063E5CE1466610C119F8E6938 /* Support Files */ = {
+		88F2DEE78C1D6F49E5910392685A0F25 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				36AABC828B12522114B264274EC7647D /* FlutterMacOS.debug.xcconfig */,
-				64C6FB686BCB576B367971CC0215B426 /* FlutterMacOS.release.xcconfig */,
+				BB835284AB2E30799758AF555ED26721 /* FlutterSecureStorage.swift */,
+				A8C6545A76F2B213AF1B437DBEB8BB2E /* FlutterSecureStoragePlugin.swift */,
 			);
-			name = "Support Files";
-			path = "../../Pods/Target Support Files/FlutterMacOS";
+			name = Classes;
+			path = Classes;
 			sourceTree = "<group>";
 		};
-		BD40102B530FEEFEADB4B6D6E2C693E0 /* example */ = {
+		8BC752E3F16E7A9CB5673EDF1C184379 /* .. */ = {
 			isa = PBXGroup;
 			children = (
-				D0AE8FD9F1C71C9C6AA2C6299B012FE4 /* macos */,
+				17E71564AC7B87B6FB5E7E37D865A162 /* .. */,
+				F4D202471A59D33CEACBF80FC7090425 /* Documents */,
 			);
-			name = example;
-			path = example;
+			name = ..;
+			path = ..;
 			sourceTree = "<group>";
 		};
-		BE8B21359D9102D0A38D509CBF2F0801 /* facebook_auth_desktop */ = {
+		8DD2975CA1BBE803953CC1DE6FE1AF16 /* .symlinks */ = {
 			isa = PBXGroup;
 			children = (
-				5165FA9BAFF8094E9FD40BAA1FF465B5 /* example */,
+				82462B31726F08478BB500DE5429FEFB /* plugins */,
 			);
-			name = facebook_auth_desktop;
-			path = facebook_auth_desktop;
+			name = .symlinks;
+			path = .symlinks;
 			sourceTree = "<group>";
 		};
-		C763103D2312EE1825E68A188623B9FC /* ephemeral */ = {
+		98D9373E842AD5F1216F9BD189FB3519 /* Documents */ = {
 			isa = PBXGroup;
 			children = (
-				6FA24F24B8C3ABDDBDC2DFF355DC5C80 /* .symlinks */,
+				1B0697500F1ECB194F4B579435D5A70B /* flutter */,
+			);
+			name = Documents;
+			path = Documents;
+			sourceTree = "<group>";
+		};
+		99D760564320E46B67B3B03781D5AF72 /* ephemeral */ = {
+			isa = PBXGroup;
+			children = (
+				4CC87E6C4ED8254778E040BAEDA77115 /* .symlinks */,
 			);
 			name = ephemeral;
 			path = ephemeral;
 			sourceTree = "<group>";
 		};
-		CA573542B204481A65539D156D475F94 /* .. */ = {
+		A22A235BDCD5F0FEAC036C1A83203E40 /* path_provider_foundation */ = {
 			isa = PBXGroup;
 			children = (
-				3B71729991B6D7D9E01D528BB8152B50 /* .. */,
+				0F13BD63FFA0C75D7F215CD827BD76A4 /* .. */,
+				E26949E010D81EB1400CCD70CAD26634 /* Pod */,
+				6F1C055F3B0F1EA6D857616F2C5C8395 /* Support Files */,
+			);
+			name = path_provider_foundation;
+			path = ../Flutter/ephemeral/.symlinks/plugins/path_provider_foundation/darwin;
+			sourceTree = "<group>";
+		};
+		A34F9844CE1B50BD7EF21CF4B41D89AD /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				5BC7DFDFE88FC685AD4A4F8B497AB5F8 /* FacebookAuthDesktopPlugin.swift */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		A67330D0493E7BEECCF0E6AF3659AFE3 /* Flutter */ = {
+			isa = PBXGroup;
+			children = (
+				AC2882EDC081037E9183F99B512529C5 /* ephemeral */,
+			);
+			name = Flutter;
+			path = Flutter;
+			sourceTree = "<group>";
+		};
+		A785CF3677501A699C8754870F71D9CD /* .symlinks */ = {
+			isa = PBXGroup;
+			children = (
+				B579E8125E4DA84EBD9F5840E75D591F /* plugins */,
+			);
+			name = .symlinks;
+			path = .symlinks;
+			sourceTree = "<group>";
+		};
+		A7D1519BD647586B3C2CF34482AF3A68 /* flutter */ = {
+			isa = PBXGroup;
+			children = (
+				09C6F83A65EC6D1AF77E5F85F7ACA27A /* flutter-facebook-auth */,
+			);
+			name = flutter;
+			path = flutter;
+			sourceTree = "<group>";
+		};
+		A9C94A4B2109387857E5C0AE0F1DE06C /* .. */ = {
+			isa = PBXGroup;
+			children = (
+				8BC752E3F16E7A9CB5673EDF1C184379 /* .. */,
 			);
 			name = ..;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		AB56001C993C32E7BBFBFCCE7D261F55 /* plugins */ = {
+			isa = PBXGroup;
+			children = (
+				3CAC876933908BB2069D3C328A72DC34 /* flutter_secure_storage_macos */,
+			);
+			name = plugins;
+			path = plugins;
+			sourceTree = "<group>";
+		};
+		AC2882EDC081037E9183F99B512529C5 /* ephemeral */ = {
+			isa = PBXGroup;
+			children = (
+				8DD2975CA1BBE803953CC1DE6FE1AF16 /* .symlinks */,
+			);
+			name = ephemeral;
+			path = ephemeral;
+			sourceTree = "<group>";
+		};
+		AEA87E385E787D621CEE20C0698281E2 /* flutter */ = {
+			isa = PBXGroup;
+			children = (
+				7C1B2F52DB7D842C0A398135186FECED /* flutter-facebook-auth */,
+			);
+			name = flutter;
+			path = flutter;
+			sourceTree = "<group>";
+		};
+		AF05FB3723473AACB26C19F3762A9B7C /* example */ = {
+			isa = PBXGroup;
+			children = (
+				08C1BE5B4833E1B9017AF9DB3CDB86BA /* macos */,
+			);
+			name = example;
+			path = example;
+			sourceTree = "<group>";
+		};
+		B3249C2C39772F7D12949521BAF52698 /* flutter-facebook-auth */ = {
+			isa = PBXGroup;
+			children = (
+				EC2113DB225C467B9353DB1AA5D288F5 /* facebook_auth_desktop */,
+			);
+			name = "flutter-facebook-auth";
+			path = "flutter-facebook-auth";
+			sourceTree = "<group>";
+		};
+		B38C4EE6B5DD43F8F3C1AE2995D9BC89 /* macos */ = {
+			isa = PBXGroup;
+			children = (
+				291D7045BEF723625504B356690064E0 /* Flutter */,
+			);
+			name = macos;
+			path = macos;
+			sourceTree = "<group>";
+		};
+		B579E8125E4DA84EBD9F5840E75D591F /* plugins */ = {
+			isa = PBXGroup;
+			children = (
+				8648E6D69D44404017DA0C75CA30B657 /* path_provider_foundation */,
+			);
+			name = plugins;
+			path = plugins;
+			sourceTree = "<group>";
+		};
+		B5DB28AC00ADA0DCF81E55DBC7753C0B /* .symlinks */ = {
+			isa = PBXGroup;
+			children = (
+				AB56001C993C32E7BBFBFCCE7D261F55 /* plugins */,
+			);
+			name = .symlinks;
+			path = .symlinks;
+			sourceTree = "<group>";
+		};
+		BC39F72AB18C9F87BEC476194CCFA93B /* path_provider_foundation */ = {
+			isa = PBXGroup;
+			children = (
+				5D28AE7283357166DD5ABF7E9D9DB95E /* Sources */,
+			);
+			name = path_provider_foundation;
+			path = path_provider_foundation;
+			sourceTree = "<group>";
+		};
+		BC86B7852B737ABCDF836FC068E525A2 /* facebook_auth_desktop */ = {
+			isa = PBXGroup;
+			children = (
+				51A95AC81BA956480D208B1441A44EDC /* macos */,
+			);
+			name = facebook_auth_desktop;
+			path = facebook_auth_desktop;
+			sourceTree = "<group>";
+		};
+		BD5037AC3D9092C1FE1B07225CCECC0A /* .. */ = {
+			isa = PBXGroup;
+			children = (
+				C4FDE103ACD925A116F8881A61B8CF5F /* .. */,
+			);
+			name = ..;
+			path = ../../../../../../../../macos;
+			sourceTree = "<group>";
+		};
+		C4FDE103ACD925A116F8881A61B8CF5F /* .. */ = {
+			isa = PBXGroup;
+			children = (
+				E986AB9C15CA6C52F3FC22A790582097 /* example */,
+			);
+			name = ..;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		C88A1344DFCE8A89EAD1B84DF68ABA67 /* darwin */ = {
+			isa = PBXGroup;
+			children = (
+				BC39F72AB18C9F87BEC476194CCFA93B /* path_provider_foundation */,
+			);
+			name = darwin;
+			path = darwin;
+			sourceTree = "<group>";
+		};
+		C8FEF22A4B654DD8C99B95CD88DF7FD5 /* path_provider_foundation */ = {
+			isa = PBXGroup;
+			children = (
+				1D063690F2EF49929C7EA95EA693D996 /* darwin */,
+			);
+			name = path_provider_foundation;
+			path = path_provider_foundation;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				14C462DF952F6B5D4F1315E8DC0510A3 /* Development Pods */,
+				303A930FC304620F490E56E4537A86C6 /* Development Pods */,
 				E0A1E60606E0BF6E2E10F1F01350DFE8 /* Frameworks */,
-				5AE73A6F5C5DA0373E98A95B7394EA96 /* Products */,
+				6D7981EBD118B210AB5BE33399273646 /* Products */,
 				791C6E4B424AF06279F8918FA67B8ED6 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D0AE8FD9F1C71C9C6AA2C6299B012FE4 /* macos */ = {
+		D2F8672D8F703607F491F2EF62909361 /* .. */ = {
 			isa = PBXGroup;
 			children = (
-				5FD75DB58514FD113960F28CA2E62438 /* Flutter */,
+				3219CD9734662ABACAF5F1C09EE23F85 /* .. */,
 			);
-			name = macos;
-			path = macos;
+			name = ..;
+			path = ..;
 			sourceTree = "<group>";
 		};
-		D4662FD84ACFE89D0A3558F4ADE29574 /* Pod */ = {
+		D9E8EFC001FCF80D9E9F55B4A176EA28 /* .. */ = {
 			isa = PBXGroup;
 			children = (
-				8B69C79D9C6D947152EF23D0710500E1 /* FlutterMacOS.podspec */,
+				FC098094A29ACB7FB85370F149248708 /* .. */,
 			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		D4CC34440CD11CF571456B4F12086386 /* Flutter */ = {
-			isa = PBXGroup;
-			children = (
-				C763103D2312EE1825E68A188623B9FC /* ephemeral */,
-			);
-			name = Flutter;
-			path = Flutter;
-			sourceTree = "<group>";
-		};
-		DFC1581E48EE27EF4CBBE8A09545DE17 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				676658D7012A7C8DC52B194E6A3202BF /* FlutterSecureStorageMacosPlugin.h */,
-				8B481212E420226FF2734EE102F803B8 /* FlutterSecureStorageMacosPlugin.m */,
-			);
-			name = Classes;
-			path = Classes;
+			name = ..;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		E0A1E60606E0BF6E2E10F1F01350DFE8 /* Frameworks */ = {
@@ -557,13 +981,34 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E28C3A5C591925328DB4D1A9566E4F5B /* ephemeral */ = {
+		E1DC35D53E48E027E745FC400CDE6690 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				6AC151ADFE63890B2D029D2E0E9015FF /* .symlinks */,
+				F783546EE827535FC2A114A8C1E4DCDC /* FlutterMacOS.debug.xcconfig */,
+				5F2D76CDA190BA5012CA82B3D01BDBA3 /* FlutterMacOS.release.xcconfig */,
 			);
-			name = ephemeral;
-			path = ephemeral;
+			name = "Support Files";
+			path = "../../Pods/Target Support Files/FlutterMacOS";
+			sourceTree = "<group>";
+		};
+		E1E4B8B4E40C7938D2994701CCC667BA /* facebook_auth_desktop */ = {
+			isa = PBXGroup;
+			children = (
+				BD5037AC3D9092C1FE1B07225CCECC0A /* .. */,
+				49C6D31641E9E810E1CAD2EF23E011C3 /* Pod */,
+				0B4379F2EAAE41A97582BB5114BEA2A6 /* Support Files */,
+			);
+			name = facebook_auth_desktop;
+			path = ../Flutter/ephemeral/.symlinks/plugins/facebook_auth_desktop/macos;
+			sourceTree = "<group>";
+		};
+		E26949E010D81EB1400CCD70CAD26634 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				59D2967717CF1AD44140A376EB245442 /* LICENSE */,
+				C9E4FF99566BD3001EAD3B49B1F642DC /* path_provider_foundation.podspec */,
+			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		E2A8756CA1FF5258A0344D53C5C60EC1 /* OS X */ = {
@@ -574,32 +1019,76 @@
 			name = "OS X";
 			sourceTree = "<group>";
 		};
-		E8066B8E8C080CF48423C8B7126868DC /* macos */ = {
+		E986AB9C15CA6C52F3FC22A790582097 /* example */ = {
 			isa = PBXGroup;
 			children = (
-				D4CC34440CD11CF571456B4F12086386 /* Flutter */,
+				B38C4EE6B5DD43F8F3C1AE2995D9BC89 /* macos */,
 			);
-			name = macos;
-			path = macos;
+			name = example;
+			path = example;
+			sourceTree = "<group>";
+		};
+		EC2113DB225C467B9353DB1AA5D288F5 /* facebook_auth_desktop */ = {
+			isa = PBXGroup;
+			children = (
+				03378E20DADFF63998FD879FCCD38FB7 /* example */,
+			);
+			name = facebook_auth_desktop;
+			path = facebook_auth_desktop;
+			sourceTree = "<group>";
+		};
+		F4D202471A59D33CEACBF80FC7090425 /* Documents */ = {
+			isa = PBXGroup;
+			children = (
+				AEA87E385E787D621CEE20C0698281E2 /* flutter */,
+			);
+			name = Documents;
+			path = Documents;
+			sourceTree = "<group>";
+		};
+		F8FA528DFD260A92AA7705E8321B1519 /* .. */ = {
+			isa = PBXGroup;
+			children = (
+				7F33124547EE99B2AC75DBCEC5A66EAF /* .. */,
+			);
+			name = ..;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		FC098094A29ACB7FB85370F149248708 /* .. */ = {
+			isa = PBXGroup;
+			children = (
+				45E69205C7EF55DC5E4DFB577656ABD9 /* .. */,
+			);
+			name = ..;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		FD1204CCCB68F8E2C7A3E4743FE342D8 /* .. */ = {
+			isa = PBXGroup;
+			children = (
+				F8FA528DFD260A92AA7705E8321B1519 /* .. */,
+			);
+			name = ..;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		050545F5A6B305B6A0969791894C5F78 /* Headers */ = {
+		7927F1C4C351DEA0E888C78647AF26CE /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2B3B177F39DD1F472441E5FA95332A1 /* Pods-Runner-umbrella.h in Headers */,
+				C82E4B2F02D6D92F3B58832D9B508C68 /* Pods-Runner-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2A48028D8359A3BECC5AC575EA892FA3 /* Headers */ = {
+		A784CDBCD7C81402017687AE68DBC1CF /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A13A1B3ECD64D378DA01E4A10C756BC /* flutter_secure_storage_macos-umbrella.h in Headers */,
-				84E62E765E3C162B008681B1F4069F90 /* FlutterSecureStorageMacosPlugin.h in Headers */,
+				F1E7C2244FFFE807BFC6FBBF5D1B744C /* path_provider_foundation-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -608,6 +1097,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DF8F3E8658A69A17316D542F1D2A94A /* facebook_auth_desktop-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D28AA9B6B2478E130F1D0EE604BA9A1B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1B1740FC7C17A25B610DFB7698725F6 /* flutter_secure_storage_macos-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -626,47 +1123,103 @@
 			buildRules = (
 			);
 			dependencies = (
-				7596664528433B160F8318E2EE61F377 /* PBXTargetDependency */,
+				8454A031BD155D17BE5B0B9265167031 /* PBXTargetDependency */,
 			);
 			name = facebook_auth_desktop;
 			productName = facebook_auth_desktop;
 			productReference = 072122A18CADFB45FEDCC4B6B0E5A79A /* facebook_auth_desktop */;
 			productType = "com.apple.product-type.framework";
 		};
-		8B74B458B450D74B75744B87BD747314 /* Pods-Runner */ = {
+		56F581DDCB0A032454E604885E17AE3C /* path_provider_foundation */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 151D046823788DCBAA93193062AEF4C0 /* Build configuration list for PBXNativeTarget "Pods-Runner" */;
+			buildConfigurationList = 9BE2E94BFE4C924B683A82AC505494B7 /* Build configuration list for PBXNativeTarget "path_provider_foundation" */;
 			buildPhases = (
-				050545F5A6B305B6A0969791894C5F78 /* Headers */,
-				6CFFFCCF06C820BE0DBD7ACB6FC4B152 /* Sources */,
-				EB06E852AED5678B6F8615203836300E /* Frameworks */,
-				EA21B8A3061E40618E6BF415BCFE0FE3 /* Resources */,
+				A784CDBCD7C81402017687AE68DBC1CF /* Headers */,
+				E5F38189A463192632F895E606CF7093 /* Sources */,
+				7C9CFA1F134286F648EEA7BF6DBEDD6B /* Frameworks */,
+				3CD2A2D9F4A02255843027C9E1551D1B /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				D99FC16FB7724AE4E137E7F9FB8E486C /* PBXTargetDependency */,
-				3834771C3DEDB994D66F92D6CE42C24D /* PBXTargetDependency */,
-				623096BABE5B2B61B4ADBD925A12DB9A /* PBXTargetDependency */,
+				DDE0DA133D9707E4824DD7B8E0756307 /* PBXTargetDependency */,
+				2C927D8C26A16F825946BD83BB6A80DF /* PBXTargetDependency */,
+			);
+			name = path_provider_foundation;
+			productName = path_provider_foundation;
+			productReference = AE157A33FEF959A214796BFF348717F6 /* path_provider_foundation */;
+			productType = "com.apple.product-type.framework";
+		};
+		66E77C5DE4BA5F956F8C49C87DB56062 /* flutter_secure_storage_macos-flutter_secure_storage_macos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1441348884A0D684460E0295A3EF2F9B /* Build configuration list for PBXNativeTarget "flutter_secure_storage_macos-flutter_secure_storage_macos" */;
+			buildPhases = (
+				B50A3A3141AFF9FF439FA88982F596D7 /* Sources */,
+				602EC3E9E159143BE56A5498633D5FBB /* Frameworks */,
+				D7E35F4DC7563C0EC4489F970BD680FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "flutter_secure_storage_macos-flutter_secure_storage_macos";
+			productName = flutter_secure_storage_macos;
+			productReference = EE61EFAFACDD872DA0464DD89DD5F07F /* flutter_secure_storage_macos-flutter_secure_storage_macos */;
+			productType = "com.apple.product-type.bundle";
+		};
+		8B74B458B450D74B75744B87BD747314 /* Pods-Runner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DACC83CC75E69A5CB079F4B0A230F6B /* Build configuration list for PBXNativeTarget "Pods-Runner" */;
+			buildPhases = (
+				7927F1C4C351DEA0E888C78647AF26CE /* Headers */,
+				9CDA2C61EA8BEACA0CC881BEFFD3C8DF /* Sources */,
+				9D444F330A8283977AB6A9460117CDA0 /* Frameworks */,
+				5228F70A7A7C3ADAF1703297AE97812A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF99B313D82638BDCAAFCF0D9D51AA09 /* PBXTargetDependency */,
+				783A46AA87C492FBAB45D62DABC297E6 /* PBXTargetDependency */,
+				6A16ADC6AA7BC05DA6AD86FBD95884C3 /* PBXTargetDependency */,
+				186F8C336E88B575B7A115752A0F2561 /* PBXTargetDependency */,
 			);
 			name = "Pods-Runner";
 			productName = Pods_Runner;
 			productReference = 669E8F25E1897672BDB80B7EB784DA24 /* Pods-Runner */;
 			productType = "com.apple.product-type.framework";
 		};
-		EF59DE143C0B7645A532B75D0696C617 /* flutter_secure_storage_macos */ = {
+		CACE6618E7996464E38687E13F67D945 /* path_provider_foundation-path_provider_foundation_privacy */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B36CCE80BD23EA64067C2C4C5D39C058 /* Build configuration list for PBXNativeTarget "flutter_secure_storage_macos" */;
+			buildConfigurationList = D85E9305A9E209B0F034F587F05CB83F /* Build configuration list for PBXNativeTarget "path_provider_foundation-path_provider_foundation_privacy" */;
 			buildPhases = (
-				2A48028D8359A3BECC5AC575EA892FA3 /* Headers */,
-				5573D9ECF8B9B475C8211F177B86DF1C /* Sources */,
-				BD99619EA0BFBADBC8144ABAD4236F94 /* Frameworks */,
-				21A862BE1571533DDA608DDA1FEAE14D /* Resources */,
+				035CB0ABEA94BDAFC2B06F55C7F42251 /* Sources */,
+				6835390CB4186A388EB2F40476A1EC33 /* Frameworks */,
+				6CFFE096FD6BCA6F5C593327263A4669 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1D8045192E775DA96B339A851A432163 /* PBXTargetDependency */,
+			);
+			name = "path_provider_foundation-path_provider_foundation_privacy";
+			productName = path_provider_foundation_privacy;
+			productReference = 3DBD4BADE27F8B91024E4B4B4DD75DB5 /* path_provider_foundation-path_provider_foundation_privacy */;
+			productType = "com.apple.product-type.bundle";
+		};
+		EF59DE143C0B7645A532B75D0696C617 /* flutter_secure_storage_macos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAEA0B51B6A283FA258C5257CF6D4D47 /* Build configuration list for PBXNativeTarget "flutter_secure_storage_macos" */;
+			buildPhases = (
+				D28AA9B6B2478E130F1D0EE604BA9A1B /* Headers */,
+				96BA15508DF6F836BD3F396F37CFEDCB /* Sources */,
+				988F6E4D32084F2B2F1A3DF8C85F2FE6 /* Frameworks */,
+				525A51F23AF71C2DBA0481BFCCDA23B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E70463CBD5E6D6BFE755D69398E644FC /* PBXTargetDependency */,
+				AAA672BD756899E2B485F214C4CB2A1C /* PBXTargetDependency */,
 			);
 			name = flutter_secure_storage_macos;
 			productName = flutter_secure_storage_macos;
@@ -679,11 +1232,11 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1240;
-				LastUpgradeCheck = 1240;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 10.0";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -691,26 +1244,22 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 5AE73A6F5C5DA0373E98A95B7394EA96 /* Products */;
+			productRefGroup = 6D7981EBD118B210AB5BE33399273646 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				4C7123F25CDE00CCE8BE96E3EC746403 /* facebook_auth_desktop */,
 				EF59DE143C0B7645A532B75D0696C617 /* flutter_secure_storage_macos */,
+				66E77C5DE4BA5F956F8C49C87DB56062 /* flutter_secure_storage_macos-flutter_secure_storage_macos */,
 				CA272E8348BAB4CE0B0C804FB7B818C4 /* FlutterMacOS */,
+				56F581DDCB0A032454E604885E17AE3C /* path_provider_foundation */,
+				CACE6618E7996464E38687E13F67D945 /* path_provider_foundation-path_provider_foundation_privacy */,
 				8B74B458B450D74B75744B87BD747314 /* Pods-Runner */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		21A862BE1571533DDA608DDA1FEAE14D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		2A36900D56B73681C2C60D57F28CA505 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -718,30 +1267,77 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EA21B8A3061E40618E6BF415BCFE0FE3 /* Resources */ = {
+		3CD2A2D9F4A02255843027C9E1551D1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68DD428154EE48C88AA2567DD5313830 /* path_provider_foundation-path_provider_foundation_privacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5228F70A7A7C3ADAF1703297AE97812A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		5573D9ECF8B9B475C8211F177B86DF1C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
+		525A51F23AF71C2DBA0481BFCCDA23B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A27E461352F18140606E9E08A1B20FE8 /* flutter_secure_storage_macos-dummy.m in Sources */,
-				2FF7AD14B62400482C3171F209D0CAAA /* FlutterSecureStorageMacosPlugin.m in Sources */,
+				89FBC07D273F075F8D04C89F3BF94383 /* flutter_secure_storage_macos-flutter_secure_storage_macos in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6CFFFCCF06C820BE0DBD7ACB6FC4B152 /* Sources */ = {
+		6CFFE096FD6BCA6F5C593327263A4669 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88371B3357E7340AF31AD460F7EEF353 /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7E35F4DC7563C0EC4489F970BD680FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC0C7E43A48AD6456425F1424EE84ED0 /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		035CB0ABEA94BDAFC2B06F55C7F42251 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47AFCB08C4AAFFD4F39F4654514B6549 /* Pods-Runner-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96BA15508DF6F836BD3F396F37CFEDCB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				923D7F674680F94C7C5210F923B7E667 /* flutter_secure_storage_macos-dummy.m in Sources */,
+				B92DB36858AC30D15147B7323986A30B /* FlutterSecureStorage.swift in Sources */,
+				140139931A2B0C620A034172A742B80A /* FlutterSecureStoragePlugin.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CDA2C61EA8BEACA0CC881BEFFD3C8DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED56D7D57E04876DD37A00269F65892E /* Pods-Runner-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B50A3A3141AFF9FF439FA88982F596D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -754,45 +1350,225 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E5F38189A463192632F895E606CF7093 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FEA57F224B910D9F95E796ABE08A599 /* messages.g.swift in Sources */,
+				3F1709D0A30CFA36FDF89F94654E26B7 /* path_provider_foundation-dummy.m in Sources */,
+				4652B98DBCFEE9B1399A0A35F2408385 /* PathProviderPlugin.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1D8045192E775DA96B339A851A432163 /* PBXTargetDependency */ = {
+		186F8C336E88B575B7A115752A0F2561 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = FlutterMacOS;
-			target = CA272E8348BAB4CE0B0C804FB7B818C4 /* FlutterMacOS */;
-			targetProxy = 2175FD6AC2483AEBC00901F5300A4A8F /* PBXContainerItemProxy */;
+			name = path_provider_foundation;
+			target = 56F581DDCB0A032454E604885E17AE3C /* path_provider_foundation */;
+			targetProxy = 743C24648907B0B601F9CE7E8CBF834F /* PBXContainerItemProxy */;
 		};
-		3834771C3DEDB994D66F92D6CE42C24D /* PBXTargetDependency */ = {
+		2C927D8C26A16F825946BD83BB6A80DF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = facebook_auth_desktop;
-			target = 4C7123F25CDE00CCE8BE96E3EC746403 /* facebook_auth_desktop */;
-			targetProxy = 80528C7A7D500508BC4B0B2DEB0DF650 /* PBXContainerItemProxy */;
+			name = "path_provider_foundation-path_provider_foundation_privacy";
+			target = CACE6618E7996464E38687E13F67D945 /* path_provider_foundation-path_provider_foundation_privacy */;
+			targetProxy = 078BFF393C97CA7C5DC64099D7916411 /* PBXContainerItemProxy */;
 		};
-		623096BABE5B2B61B4ADBD925A12DB9A /* PBXTargetDependency */ = {
+		6A16ADC6AA7BC05DA6AD86FBD95884C3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = flutter_secure_storage_macos;
 			target = EF59DE143C0B7645A532B75D0696C617 /* flutter_secure_storage_macos */;
-			targetProxy = A083FC251D34FA491D1C1C438A5849FF /* PBXContainerItemProxy */;
+			targetProxy = 13B29F7AEE73F4187504F041CA3B3EB2 /* PBXContainerItemProxy */;
 		};
-		7596664528433B160F8318E2EE61F377 /* PBXTargetDependency */ = {
+		783A46AA87C492FBAB45D62DABC297E6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = facebook_auth_desktop;
+			target = 4C7123F25CDE00CCE8BE96E3EC746403 /* facebook_auth_desktop */;
+			targetProxy = 60FB3C27346692052E52F1F5E62EC780 /* PBXContainerItemProxy */;
+		};
+		8454A031BD155D17BE5B0B9265167031 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = FlutterMacOS;
 			target = CA272E8348BAB4CE0B0C804FB7B818C4 /* FlutterMacOS */;
-			targetProxy = 52150808A334DD0DA0BAF261883DCA3C /* PBXContainerItemProxy */;
+			targetProxy = 6789F00F3166B40F72B019864D8A000B /* PBXContainerItemProxy */;
 		};
-		D99FC16FB7724AE4E137E7F9FB8E486C /* PBXTargetDependency */ = {
+		AAA672BD756899E2B485F214C4CB2A1C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "flutter_secure_storage_macos-flutter_secure_storage_macos";
+			target = 66E77C5DE4BA5F956F8C49C87DB56062 /* flutter_secure_storage_macos-flutter_secure_storage_macos */;
+			targetProxy = 75450CC57DEBFE6A6FAA19E176CAD0DF /* PBXContainerItemProxy */;
+		};
+		BF99B313D82638BDCAAFCF0D9D51AA09 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = FlutterMacOS;
 			target = CA272E8348BAB4CE0B0C804FB7B818C4 /* FlutterMacOS */;
-			targetProxy = 9866E5A54379437CDBDA89D32B1D3EDF /* PBXContainerItemProxy */;
+			targetProxy = 1223FCC6BB5ABD8FA35A1F17E6DCC6A4 /* PBXContainerItemProxy */;
+		};
+		DDE0DA133D9707E4824DD7B8E0756307 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FlutterMacOS;
+			target = CA272E8348BAB4CE0B0C804FB7B818C4 /* FlutterMacOS */;
+			targetProxy = 7866B2A8105B87E8A6D5694CDB575921 /* PBXContainerItemProxy */;
+		};
+		E70463CBD5E6D6BFE755D69398E644FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FlutterMacOS;
+			target = CA272E8348BAB4CE0B0C804FB7B818C4 /* FlutterMacOS */;
+			targetProxy = F358855ADD19ED714B106D6C1685D091 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		12DD09D8B67EE22CC3C4701E38760CDC /* Release */ = {
+		0F4C37350F1599B3E5CF9E94B3D0047A /* Profile */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F0E1DE3426BB6ABE34A2CA9FF2CD0478 /* flutter_secure_storage_macos.release.xcconfig */;
+			baseConfigurationReference = 9F79F8269DC34AC56BB3D1D9652C0D86 /* Pods-Runner.profile.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"/Users/darwin/development/flutter/bin/cache/artifacts/engine/darwin-x64-release/FlutterMacOS.xcframework/macos-arm64_x86_64\"",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Target Support Files/Pods-Runner/Pods-Runner-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MODULEMAP_FILE = "Target Support Files/Pods-Runner/Pods-Runner.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Profile;
+		};
+		1D6BBE705B4E14F77C21AB0FECA78CC3 /* Profile */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F2D76CDA190BA5012CA82B3D01BDBA3 /* FlutterMacOS.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				SDKROOT = macosx;
+			};
+			name = Profile;
+		};
+		33119897E0AD455DF867C9E13C771819 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1ECEFF172ADCE30B5FA0C3B8A6E04879 /* path_provider_foundation.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"/Users/darwin/development/flutter/bin/cache/artifacts/engine/darwin-x64/FlutterMacOS.xcframework/macos-arm64_x86_64\"",
+					"$(inherited)",
+				);
+				GCC_PREFIX_HEADER = "Target Support Files/path_provider_foundation/path_provider_foundation-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/path_provider_foundation/path_provider_foundation-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MODULEMAP_FILE = "Target Support Files/path_provider_foundation/path_provider_foundation.modulemap";
+				PRODUCT_MODULE_NAME = path_provider_foundation;
+				PRODUCT_NAME = path_provider_foundation;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		376901DDB874F6DB1B196DE7072B0934 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26DAD4208C3EA9667ABF78F6191ACDF7 /* path_provider_foundation.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"/Users/darwin/development/flutter/bin/cache/artifacts/engine/darwin-x64-release/FlutterMacOS.xcframework/macos-arm64_x86_64\"",
+					"$(inherited)",
+				);
+				GCC_PREFIX_HEADER = "Target Support Files/path_provider_foundation/path_provider_foundation-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/path_provider_foundation/path_provider_foundation-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MODULEMAP_FILE = "Target Support Files/path_provider_foundation/path_provider_foundation.modulemap";
+				PRODUCT_MODULE_NAME = path_provider_foundation;
+				PRODUCT_NAME = path_provider_foundation;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		59037CDF4B428540CF5722042DCC3DD4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F00FC4E12D698907F3D16AAB39E40FCE /* flutter_secure_storage_macos.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -806,9 +1582,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				EXCLUDED_ARCHS = arm64;
 				FRAMEWORK_SEARCH_PATHS = (
-					"\"/Users/darwin/development/flutter/bin/cache/artifacts/engine/darwin-x64-release\"",
+					"\"/Users/darwin/development/flutter/bin/cache/artifacts/engine/darwin-x64-release/FlutterMacOS.xcframework/macos-arm64_x86_64\"",
 					"$(inherited)",
 				);
 				GCC_PREFIX_HEADER = "Target Support Files/flutter_secure_storage_macos/flutter_secure_storage_macos-prefix.pch";
@@ -819,7 +1594,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MODULEMAP_FILE = "Target Support Files/flutter_secure_storage_macos/flutter_secure_storage_macos.modulemap";
 				PRODUCT_MODULE_NAME = flutter_secure_storage_macos;
 				PRODUCT_NAME = flutter_secure_storage_macos;
@@ -832,7 +1607,169 @@
 			};
 			name = Release;
 		};
-		29C906FE5FB7ACDC680C6CC289EFF96E /* Debug */ = {
+		5A52FEBFF32239EB19BE396E521A8626 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DE3BB4627415F33E350E9DC210C3A87 /* flutter_secure_storage_macos.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"/Users/darwin/development/flutter/bin/cache/artifacts/engine/darwin-x64/FlutterMacOS.xcframework/macos-arm64_x86_64\"",
+					"$(inherited)",
+				);
+				GCC_PREFIX_HEADER = "Target Support Files/flutter_secure_storage_macos/flutter_secure_storage_macos-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/flutter_secure_storage_macos/flutter_secure_storage_macos-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MODULEMAP_FILE = "Target Support Files/flutter_secure_storage_macos/flutter_secure_storage_macos.modulemap";
+				PRODUCT_MODULE_NAME = flutter_secure_storage_macos;
+				PRODUCT_NAME = flutter_secure_storage_macos;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		75AB2D387134DD433F958C53F10C529D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2FA70CA298C392CB8332ADEEDD1CE85 /* Pods-Runner.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"/Users/darwin/development/flutter/bin/cache/artifacts/engine/darwin-x64-release/FlutterMacOS.xcframework/macos-arm64_x86_64\"",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Target Support Files/Pods-Runner/Pods-Runner-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MODULEMAP_FILE = "Target Support Files/Pods-Runner/Pods-Runner.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8CDE888D7A8BB37EA6CD3F06BD55B3A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FA4B9A0FF2A780046C4383A504229E4 /* facebook_auth_desktop.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"/Users/darwin/development/flutter/bin/cache/artifacts/engine/darwin-x64-release/FlutterMacOS.xcframework/macos-arm64_x86_64\"",
+					"$(inherited)",
+				);
+				GCC_PREFIX_HEADER = "Target Support Files/facebook_auth_desktop/facebook_auth_desktop-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/facebook_auth_desktop/facebook_auth_desktop-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/facebook_auth_desktop/facebook_auth_desktop.modulemap";
+				PRODUCT_MODULE_NAME = facebook_auth_desktop;
+				PRODUCT_NAME = facebook_auth_desktop;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A4FC0D00DA2EE7C21A36B1D001A6416C /* Profile */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F00FC4E12D698907F3D16AAB39E40FCE /* flutter_secure_storage_macos.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGNING_ALLOWED = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/flutter_secure_storage_macos";
+				IBSC_MODULE = flutter_secure_storage_macos;
+				INFOPLIST_FILE = "Target Support Files/flutter_secure_storage_macos/ResourceBundle-flutter_secure_storage_macos-flutter_secure_storage_macos-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_NAME = flutter_secure_storage_macos;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Profile;
+		};
+		A72776914858568E6C88E59F71950BFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F00FC4E12D698907F3D16AAB39E40FCE /* flutter_secure_storage_macos.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/flutter_secure_storage_macos";
+				IBSC_MODULE = flutter_secure_storage_macos;
+				INFOPLIST_FILE = "Target Support Files/flutter_secure_storage_macos/ResourceBundle-flutter_secure_storage_macos-flutter_secure_storage_macos-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_NAME = flutter_secure_storage_macos;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		A734648D21C485124F4CA7866CB7B37C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -885,7 +1822,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -898,27 +1835,9 @@
 			};
 			name = Debug;
 		};
-		3090F4A125CF2639AF0D3EAE187F5C23 /* Release */ = {
+		AA0EAABCC41E33992571EE505DFB95D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 64C6FB686BCB576B367971CC0215B426 /* FlutterMacOS.release.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				SDKROOT = macosx;
-			};
-			name = Release;
-		};
-		4763886C351BE419D0F3E98AD25CF6DB /* Profile */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F0E1DE3426BB6ABE34A2CA9FF2CD0478 /* flutter_secure_storage_macos.release.xcconfig */;
+			baseConfigurationReference = 7BD7516F0612CAA535D9E0CB610C760A /* facebook_auth_desktop.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -932,23 +1851,21 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				EXCLUDED_ARCHS = arm64;
 				FRAMEWORK_SEARCH_PATHS = (
-					"\"/Users/darwin/development/flutter/bin/cache/artifacts/engine/darwin-x64-release\"",
+					"\"/Users/darwin/development/flutter/bin/cache/artifacts/engine/darwin-x64/FlutterMacOS.xcframework/macos-arm64_x86_64\"",
 					"$(inherited)",
 				);
-				GCC_PREFIX_HEADER = "Target Support Files/flutter_secure_storage_macos/flutter_secure_storage_macos-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/flutter_secure_storage_macos/flutter_secure_storage_macos-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/facebook_auth_desktop/facebook_auth_desktop-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/facebook_auth_desktop/facebook_auth_desktop-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				MODULEMAP_FILE = "Target Support Files/flutter_secure_storage_macos/flutter_secure_storage_macos.modulemap";
-				PRODUCT_MODULE_NAME = flutter_secure_storage_macos;
-				PRODUCT_NAME = flutter_secure_storage_macos;
+				MODULEMAP_FILE = "Target Support Files/facebook_auth_desktop/facebook_auth_desktop.modulemap";
+				PRODUCT_MODULE_NAME = facebook_auth_desktop;
+				PRODUCT_NAME = facebook_auth_desktop;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -956,11 +1873,29 @@
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Profile;
+			name = Debug;
 		};
-		4AABE67B16E0D36E94CC728786F6F488 /* Debug */ = {
+		B116B6957EEBC2B8B960BDBDF294A2C4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 36AABC828B12522114B264274EC7647D /* FlutterMacOS.debug.xcconfig */;
+			baseConfigurationReference = 0DE3BB4627415F33E350E9DC210C3A87 /* flutter_secure_storage_macos.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/flutter_secure_storage_macos";
+				IBSC_MODULE = flutter_secure_storage_macos;
+				INFOPLIST_FILE = "Target Support Files/flutter_secure_storage_macos/ResourceBundle-flutter_secure_storage_macos-flutter_secure_storage_macos-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_NAME = flutter_secure_storage_macos;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		B2AC953410975D4FAC01D6592A2813C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F2D76CDA190BA5012CA82B3D01BDBA3 /* FlutterMacOS.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -971,74 +1906,52 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				SDKROOT = macosx;
-			};
-			name = Debug;
-		};
-		59909D53159D0E69D82D4AF65B5E5706 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
-				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
 		};
-		62BA325489888A4C9E99CEBC5F25641C /* Profile */ = {
+		BD7C220D91902E49B7C6A63F6F87E878 /* Profile */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FA4B9A0FF2A780046C4383A504229E4 /* facebook_auth_desktop.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"/Users/darwin/development/flutter/bin/cache/artifacts/engine/darwin-x64-release/FlutterMacOS.xcframework/macos-arm64_x86_64\"",
+					"$(inherited)",
+				);
+				GCC_PREFIX_HEADER = "Target Support Files/facebook_auth_desktop/facebook_auth_desktop-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/facebook_auth_desktop/facebook_auth_desktop-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/facebook_auth_desktop/facebook_auth_desktop.modulemap";
+				PRODUCT_MODULE_NAME = facebook_auth_desktop;
+				PRODUCT_NAME = facebook_auth_desktop;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Profile;
+		};
+		C38C56AC8A0B6CDAE880C1F3D00965FD /* Profile */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1088,7 +2001,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1100,7 +2013,165 @@
 			};
 			name = Profile;
 		};
-		82BFBF83E0E633E90FD329185E6516FA /* Debug */ = {
+		D09E3D6F6BA2F67D9C5B1895E13E81E7 /* Profile */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F00FC4E12D698907F3D16AAB39E40FCE /* flutter_secure_storage_macos.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"/Users/darwin/development/flutter/bin/cache/artifacts/engine/darwin-x64-release/FlutterMacOS.xcframework/macos-arm64_x86_64\"",
+					"$(inherited)",
+				);
+				GCC_PREFIX_HEADER = "Target Support Files/flutter_secure_storage_macos/flutter_secure_storage_macos-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/flutter_secure_storage_macos/flutter_secure_storage_macos-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MODULEMAP_FILE = "Target Support Files/flutter_secure_storage_macos/flutter_secure_storage_macos.modulemap";
+				PRODUCT_MODULE_NAME = flutter_secure_storage_macos;
+				PRODUCT_NAME = flutter_secure_storage_macos;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Profile;
+		};
+		D7C18A4BB3A23E3E9BD431BC6F0C4001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		DE3522BD18406F17F8719EC967A26EB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F783546EE827535FC2A114A8C1E4DCDC /* FlutterMacOS.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		DF1E410BC696DB695265D33E64BC9689 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26DAD4208C3EA9667ABF78F6191ACDF7 /* path_provider_foundation.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/path_provider_foundation";
+				IBSC_MODULE = path_provider_foundation;
+				INFOPLIST_FILE = "Target Support Files/path_provider_foundation/ResourceBundle-path_provider_foundation_privacy-path_provider_foundation-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_NAME = path_provider_foundation_privacy;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		E784CD3940710009630E493B91D6DB70 /* Profile */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26DAD4208C3EA9667ABF78F6191ACDF7 /* path_provider_foundation.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGNING_ALLOWED = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/path_provider_foundation";
+				IBSC_MODULE = path_provider_foundation;
+				INFOPLIST_FILE = "Target Support Files/path_provider_foundation/ResourceBundle-path_provider_foundation_privacy-path_provider_foundation-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_NAME = path_provider_foundation_privacy;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Profile;
+		};
+		EB9CF6AF3B0F99E66EF6A998478CC57F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CDAECCF4B5E08124ED410F09FD5A5DF9 /* Pods-Runner.debug.xcconfig */;
 			buildSettings = {
@@ -1118,9 +2189,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				EXCLUDED_ARCHS = arm64;
 				FRAMEWORK_SEARCH_PATHS = (
-					"\"/Users/darwin/development/flutter/bin/cache/artifacts/engine/darwin-x64\"",
+					"\"/Users/darwin/development/flutter/bin/cache/artifacts/engine/darwin-x64/FlutterMacOS.xcframework/macos-arm64_x86_64\"",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "Target Support Files/Pods-Runner/Pods-Runner-Info.plist";
@@ -1131,7 +2201,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MODULEMAP_FILE = "Target Support Files/Pods-Runner/Pods-Runner.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
@@ -1145,53 +2215,28 @@
 			};
 			name = Debug;
 		};
-		8CDE888D7A8BB37EA6CD3F06BD55B3A2 /* Release */ = {
+		F292781FABD6162CB8B7179FD247219E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B78C0FF8C311D82F2A0D5DEE4B9E73B8 /* facebook_auth_desktop.release.xcconfig */;
+			baseConfigurationReference = 1ECEFF172ADCE30B5FA0C3B8A6E04879 /* path_provider_foundation.debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				EXCLUDED_ARCHS = arm64;
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"/Users/darwin/development/flutter/bin/cache/artifacts/engine/darwin-x64-release\"",
-					"$(inherited)",
-				);
-				GCC_PREFIX_HEADER = "Target Support Files/facebook_auth_desktop/facebook_auth_desktop-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/facebook_auth_desktop/facebook_auth_desktop-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				MODULEMAP_FILE = "Target Support Files/facebook_auth_desktop/facebook_auth_desktop.modulemap";
-				PRODUCT_MODULE_NAME = facebook_auth_desktop;
-				PRODUCT_NAME = facebook_auth_desktop;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/path_provider_foundation";
+				IBSC_MODULE = path_provider_foundation;
+				INFOPLIST_FILE = "Target Support Files/path_provider_foundation/ResourceBundle-path_provider_foundation_privacy-path_provider_foundation-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_NAME = path_provider_foundation_privacy;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				WRAPPER_EXTENSION = bundle;
 			};
-			name = Release;
+			name = Debug;
 		};
-		9A3B34E4D2CDE678DB9CFAD05C86DB2E /* Profile */ = {
+		F573674CC0D105389B6D43355CEC0FDE /* Profile */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9F79F8269DC34AC56BB3D1D9652C0D86 /* Pods-Runner.profile.xcconfig */;
+			baseConfigurationReference = 26DAD4208C3EA9667ABF78F6191ACDF7 /* path_provider_foundation.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGNING_ALLOWED = NO;
@@ -1205,168 +2250,22 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				EXCLUDED_ARCHS = arm64;
 				FRAMEWORK_SEARCH_PATHS = (
-					"\"/Users/darwin/development/flutter/bin/cache/artifacts/engine/darwin-x64-release\"",
+					"\"/Users/darwin/development/flutter/bin/cache/artifacts/engine/darwin-x64-release/FlutterMacOS.xcframework/macos-arm64_x86_64\"",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "Target Support Files/Pods-Runner/Pods-Runner-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/path_provider_foundation/path_provider_foundation-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/path_provider_foundation/path_provider_foundation-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				MODULEMAP_FILE = "Target Support Files/Pods-Runner/Pods-Runner.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Profile;
-		};
-		AA0EAABCC41E33992571EE505DFB95D8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 83A4BDADC5283428CABE0396B9CF47CD /* facebook_auth_desktop.debug.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				EXCLUDED_ARCHS = arm64;
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"/Users/darwin/development/flutter/bin/cache/artifacts/engine/darwin-x64\"",
-					"$(inherited)",
-				);
-				GCC_PREFIX_HEADER = "Target Support Files/facebook_auth_desktop/facebook_auth_desktop-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/facebook_auth_desktop/facebook_auth_desktop-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				MODULEMAP_FILE = "Target Support Files/facebook_auth_desktop/facebook_auth_desktop.modulemap";
-				PRODUCT_MODULE_NAME = facebook_auth_desktop;
-				PRODUCT_NAME = facebook_auth_desktop;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		AD221369C5BD3BEA047A3355327146A4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4DF59FDF98A89D5C31F36FEF94BD5340 /* flutter_secure_storage_macos.debug.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				EXCLUDED_ARCHS = arm64;
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"/Users/darwin/development/flutter/bin/cache/artifacts/engine/darwin-x64\"",
-					"$(inherited)",
-				);
-				GCC_PREFIX_HEADER = "Target Support Files/flutter_secure_storage_macos/flutter_secure_storage_macos-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/flutter_secure_storage_macos/flutter_secure_storage_macos-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				MODULEMAP_FILE = "Target Support Files/flutter_secure_storage_macos/flutter_secure_storage_macos.modulemap";
-				PRODUCT_MODULE_NAME = flutter_secure_storage_macos;
-				PRODUCT_NAME = flutter_secure_storage_macos;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		B8DEF8145783F51A780846D45A8E53E3 /* Profile */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 64C6FB686BCB576B367971CC0215B426 /* FlutterMacOS.release.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				SDKROOT = macosx;
-			};
-			name = Profile;
-		};
-		BD7C220D91902E49B7C6A63F6F87E878 /* Profile */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B78C0FF8C311D82F2A0D5DEE4B9E73B8 /* facebook_auth_desktop.release.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				EXCLUDED_ARCHS = arm64;
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"/Users/darwin/development/flutter/bin/cache/artifacts/engine/darwin-x64-release\"",
-					"$(inherited)",
-				);
-				GCC_PREFIX_HEADER = "Target Support Files/facebook_auth_desktop/facebook_auth_desktop-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/facebook_auth_desktop/facebook_auth_desktop-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				MODULEMAP_FILE = "Target Support Files/facebook_auth_desktop/facebook_auth_desktop.modulemap";
-				PRODUCT_MODULE_NAME = facebook_auth_desktop;
-				PRODUCT_NAME = facebook_auth_desktop;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MODULEMAP_FILE = "Target Support Files/path_provider_foundation/path_provider_foundation.modulemap";
+				PRODUCT_MODULE_NAME = path_provider_foundation;
+				PRODUCT_NAME = path_provider_foundation;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -1375,61 +2274,16 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Profile;
-		};
-		DC6DD0FB1500B06203BC61CBD807E967 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D2FA70CA298C392CB8332ADEEDD1CE85 /* Pods-Runner.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				EXCLUDED_ARCHS = arm64;
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"/Users/darwin/development/flutter/bin/cache/artifacts/engine/darwin-x64-release\"",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "Target Support Files/Pods-Runner/Pods-Runner-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				MODULEMAP_FILE = "Target Support Files/Pods-Runner/Pods-Runner.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		151D046823788DCBAA93193062AEF4C0 /* Build configuration list for PBXNativeTarget "Pods-Runner" */ = {
+		1441348884A0D684460E0295A3EF2F9B /* Build configuration list for PBXNativeTarget "flutter_secure_storage_macos-flutter_secure_storage_macos" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				82BFBF83E0E633E90FD329185E6516FA /* Debug */,
-				9A3B34E4D2CDE678DB9CFAD05C86DB2E /* Profile */,
-				DC6DD0FB1500B06203BC61CBD807E967 /* Release */,
+				B116B6957EEBC2B8B960BDBDF294A2C4 /* Debug */,
+				A4FC0D00DA2EE7C21A36B1D001A6416C /* Profile */,
+				A72776914858568E6C88E59F71950BFB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1437,9 +2291,9 @@
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				29C906FE5FB7ACDC680C6CC289EFF96E /* Debug */,
-				62BA325489888A4C9E99CEBC5F25641C /* Profile */,
-				59909D53159D0E69D82D4AF65B5E5706 /* Release */,
+				A734648D21C485124F4CA7866CB7B37C /* Debug */,
+				C38C56AC8A0B6CDAE880C1F3D00965FD /* Profile */,
+				D7C18A4BB3A23E3E9BD431BC6F0C4001 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1447,9 +2301,19 @@
 		624022EE1C2EAB1C3CC38699E1368C5F /* Build configuration list for PBXAggregateTarget "FlutterMacOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4AABE67B16E0D36E94CC728786F6F488 /* Debug */,
-				B8DEF8145783F51A780846D45A8E53E3 /* Profile */,
-				3090F4A125CF2639AF0D3EAE187F5C23 /* Release */,
+				DE3522BD18406F17F8719EC967A26EB4 /* Debug */,
+				1D6BBE705B4E14F77C21AB0FECA78CC3 /* Profile */,
+				B2AC953410975D4FAC01D6592A2813C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DACC83CC75E69A5CB079F4B0A230F6B /* Build configuration list for PBXNativeTarget "Pods-Runner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB9CF6AF3B0F99E66EF6A998478CC57F /* Debug */,
+				0F4C37350F1599B3E5CF9E94B3D0047A /* Profile */,
+				75AB2D387134DD433F958C53F10C529D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1464,12 +2328,32 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B36CCE80BD23EA64067C2C4C5D39C058 /* Build configuration list for PBXNativeTarget "flutter_secure_storage_macos" */ = {
+		9BE2E94BFE4C924B683A82AC505494B7 /* Build configuration list for PBXNativeTarget "path_provider_foundation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AD221369C5BD3BEA047A3355327146A4 /* Debug */,
-				4763886C351BE419D0F3E98AD25CF6DB /* Profile */,
-				12DD09D8B67EE22CC3C4701E38760CDC /* Release */,
+				33119897E0AD455DF867C9E13C771819 /* Debug */,
+				F573674CC0D105389B6D43355CEC0FDE /* Profile */,
+				376901DDB874F6DB1B196DE7072B0934 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAEA0B51B6A283FA258C5257CF6D4D47 /* Build configuration list for PBXNativeTarget "flutter_secure_storage_macos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A52FEBFF32239EB19BE396E521A8626 /* Debug */,
+				D09E3D6F6BA2F67D9C5B1895E13E81E7 /* Profile */,
+				59037CDF4B428540CF5722042DCC3DD4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D85E9305A9E209B0F034F587F05CB83F /* Build configuration list for PBXNativeTarget "path_provider_foundation-path_provider_foundation_privacy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F292781FABD6162CB8B7179FD247219E /* Debug */,
+				E784CD3940710009630E493B91D6DB70 /* Profile */,
+				DF1E410BC696DB695265D33E64BC9689 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
